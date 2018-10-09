@@ -1,0 +1,15 @@
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\obj\Debug\ClockRestoration.BusinessLogic.csproj.CoreCompileInputs.cache
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\bin\Debug\ClockRestoration.BusinessLogic.dll
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\bin\Debug\ClockRestoration.BusinessLogic.pdb
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\bin\Debug\ClockRestoration.DataAccess.dll
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\bin\Debug\ClockRestoration.Entities.dll
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\bin\Debug\EntityFramework.dll
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\bin\Debug\ClockRestoration.DataAccess.pdb
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\bin\Debug\ClockRestoration.DataAccess.dll.config
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\bin\Debug\ClockRestoration.Entities.pdb
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\bin\Debug\ClockRestoration.Entities.dll.config
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\bin\Debug\EntityFramework.xml
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\obj\Debug\ClockRestoration.BusinessLogic.csprojAssemblyReference.cache
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\obj\Debug\ClockRestoration.BusinessLogic.csproj.CopyComplete
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\obj\Debug\ClockRestoration.BusinessLogic.dll
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\obj\Debug\ClockRestoration.BusinessLogic.pdb

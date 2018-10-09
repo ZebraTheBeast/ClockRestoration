@@ -1,0 +1,15 @@
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.DataAccess\obj\Debug\ClockRestoration.DataAccess.csprojAssemblyReference.cache
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.DataAccess\obj\Debug\ClockRestoration.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.DataAccess\bin\Debug\ClockRestoration.DataAccess.dll.config
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.DataAccess\bin\Debug\ClockRestoration.DataAccess.dll
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.DataAccess\bin\Debug\ClockRestoration.DataAccess.pdb
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.DataAccess\bin\Debug\ClockRestoration.Entities.dll
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.DataAccess\bin\Debug\EntityFramework.dll
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.DataAccess\bin\Debug\ClockRestoration.Entities.pdb
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.DataAccess\bin\Debug\ClockRestoration.Entities.dll.config
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.DataAccess\bin\Debug\EntityFramework.xml
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.DataAccess\obj\Debug\ClockRestoration.DataAccess.csproj.CopyComplete
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.DataAccess\obj\Debug\ClockRestoration.DataAccess.dll
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.DataAccess\obj\Debug\ClockRestoration.DataAccess.pdb
