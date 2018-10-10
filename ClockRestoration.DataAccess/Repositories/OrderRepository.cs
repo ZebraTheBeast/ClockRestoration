@@ -1,31 +1,16 @@
-﻿using ClockRestoration.DataAccess.Context;
+﻿using ClockRestoration.DataAccess.Interfaces;
 using ClockRestoration.Entities;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace ClockRestoration.DataAccess.Repositories
 {
-    public class OrderRepository
+    public class OrderRepository : GenericRepository<Order>, IOrderRepository
     {
         private string _connectionString;
 
-        public OrderRepository(string connectionString)
+        public OrderRepository(string connectionString) : base(connectionString)
         {
             _connectionString = connectionString;
         }
 
-        public void Add(Order order)
-        {
-            using (ClockRestorationContext db = new ClockRestorationContext(_connectionString))
-            {
-                //db.Orders.Add(order);
-
-                var payment = new Payment { Title = "zhopa" };
-                db.Payments.Add(payment);
-
-                db.SaveChanges();
-            }
-        }
     }
 }

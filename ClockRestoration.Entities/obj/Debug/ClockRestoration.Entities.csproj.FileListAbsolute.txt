@@ -5,7 +5,6 @@ C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRest
 C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.Entities\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.Entities\bin\Debug\EntityFramework.xml
 C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.Entities\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.Entities\obj\Debug\ClockRestoration.Entities.csprojAssemblyReference.cache
 C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.Entities\obj\Debug\ClockRestoration.Entities.csproj.CoreCompileInputs.cache
 C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.Entities\obj\Debug\ClockRestoration.Entities.csproj.CopyComplete
 C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.Entities\obj\Debug\ClockRestoration.Entities.dll

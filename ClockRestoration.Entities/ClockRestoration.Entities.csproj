@@ -51,8 +51,9 @@
     <Compile Include="Brand.cs" />
     <Compile Include="ClockType.cs" />
     <Compile Include="Delivery.cs" />
+    <Compile Include="Enums\UserRole.cs" />
     <Compile Include="Order.cs" />
-    <Compile Include="OrderStatus.cs" />
+    <Compile Include="Enums\OrderStatus.cs" />
     <Compile Include="Payment.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="User.cs" />
