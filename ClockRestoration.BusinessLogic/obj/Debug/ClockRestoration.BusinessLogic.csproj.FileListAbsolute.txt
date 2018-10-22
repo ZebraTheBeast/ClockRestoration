@@ -13,3 +13,10 @@ C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRest
 C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\obj\Debug\ClockRestoration.BusinessLogic.csproj.CopyComplete
 C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\obj\Debug\ClockRestoration.BusinessLogic.dll
 C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\obj\Debug\ClockRestoration.BusinessLogic.pdb
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\bin\Debug\AutoMapper.dll
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\bin\Debug\ClockRestoration.ViewModels.dll
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\bin\Debug\System.ValueTuple.dll
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\bin\Debug\ClockRestoration.ViewModels.pdb
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\bin\Debug\AutoMapper.pdb
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\bin\Debug\AutoMapper.xml
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\bin\Debug\System.ValueTuple.xml

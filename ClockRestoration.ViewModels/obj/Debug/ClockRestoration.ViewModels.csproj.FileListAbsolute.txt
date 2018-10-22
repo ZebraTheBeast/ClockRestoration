@@ -1,0 +1,6 @@
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.ViewModels\bin\Debug\ClockRestoration.ViewModels.dll
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.ViewModels\bin\Debug\ClockRestoration.ViewModels.pdb
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.ViewModels\obj\Debug\ClockRestoration.ViewModels.csprojAssemblyReference.cache
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.ViewModels\obj\Debug\ClockRestoration.ViewModels.csproj.CoreCompileInputs.cache
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.ViewModels\obj\Debug\ClockRestoration.ViewModels.dll
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.ViewModels\obj\Debug\ClockRestoration.ViewModels.pdb

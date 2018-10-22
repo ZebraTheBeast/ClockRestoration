@@ -13,3 +13,5 @@ C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRest
 C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.DataAccess\obj\Debug\ClockRestoration.DataAccess.csproj.CopyComplete
 C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.DataAccess\obj\Debug\ClockRestoration.DataAccess.dll
 C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.DataAccess\obj\Debug\ClockRestoration.DataAccess.pdb
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.DataAccess\obj\Debug\ClockRestoration.DataAccess.Migrations.helpme.resources
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.DataAccess\obj\Debug\ClockRestoration.DataAccess.csproj.GenerateResource.cache

@@ -22,3 +22,15 @@ select,
 textarea {
     max-width: 280px;
 }
+
+body {
+    background-color: lightgrey;
+}
+
+.main-image {
+    padding: 20px;
+}
+
+.main-image img {
+    height: 450px;
+}

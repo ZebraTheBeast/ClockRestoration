@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClockRestoration.BusinessLogic.Mappers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -12,6 +13,8 @@ namespace ClockRestoration
     {
         protected void Application_Start()
         {
+            AutoMapperConfig.Initialize();
+
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);

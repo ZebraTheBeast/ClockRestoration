@@ -197,13 +197,16 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Order.cshtml" />
+    <Content Include="Views\Home\GetOrders.cshtml" />
+    <Content Include="Views\Home\Details.cshtml" />
+    <Content Include="Views\Home\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Uploads\Photo\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -222,6 +225,14 @@
     <ProjectReference Include="..\ClockRestoration.BusinessLogic\ClockRestoration.BusinessLogic.csproj">
       <Project>{6d4d2845-ecef-4568-b078-add2fcd2b588}</Project>
       <Name>ClockRestoration.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClockRestoration.Entities\ClockRestoration.Entities.csproj">
+      <Project>{6C368301-E8DE-40C0-A6F8-AE79D48604C1}</Project>
+      <Name>ClockRestoration.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClockRestoration.ViewModels\ClockRestoration.ViewModels.csproj">
+      <Project>{05ef9664-e122-41bc-a9bc-a55cb7a1184d}</Project>
+      <Name>ClockRestoration.ViewModels</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

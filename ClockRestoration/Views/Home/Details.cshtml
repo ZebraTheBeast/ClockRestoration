@@ -1,0 +1,105 @@
+﻿@model ClockRestoration.ViewModels.OrderViewItem
+
+<h2>Details</h2>
+
+<div>
+    <h4>Order №@Model.Id</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Phone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Phone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DeadLine)
+        </dt>
+
+        <dd>
+            @Model.DeadLine.ToShortDateString()
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Brand)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Brand)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ClockType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ClockType)
+        </dd>
+
+        <dt>
+            Image
+        </dt>
+
+        <dd>
+            <img src="~/@Model.ImageUrl" />
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Comments)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Comments)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Delivery)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Delivery)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Payment)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Payment)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }, new { @class= "btn btn-default" })
+    @Html.ActionLink("Confirm", "ConfirmOrder", new { id = Model.Id }, new { @class = "btn btn-success" })
+    @Html.ActionLink("Done", "DoneOrder", new { id = Model.Id }, new { @class = "btn btn-primary" })
+    @Html.ActionLink("Cancel", "CancelOrder", new { id = Model.Id }, new { @class = "btn btn-danger" })
+    @Html.ActionLink("Back to List", "GetOrders", new { }, new { @class = "btn btn-default" })
+</p>
