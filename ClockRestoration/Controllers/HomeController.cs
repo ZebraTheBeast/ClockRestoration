@@ -67,7 +67,7 @@ namespace ClockRestoration.Controllers
         public ActionResult Edit(OrderViewItem orderViewItem)
         {
             _orderService.UpdateOrder(orderViewItem);
-            return View("Details", new { orderViewItem.Id });
+            return RedirectToAction("Details", new { orderViewItem.Id });
         }
 
         public ActionResult Details(int id)
