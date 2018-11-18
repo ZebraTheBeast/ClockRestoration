@@ -56,6 +56,20 @@ namespace ClockRestoration.Controllers
             return View(viewModel);
         }
 
+        public ActionResult Gallery()
+        {
+            return View();
+        }
+
+        public ActionResult Contacts()
+        {
+            return View();
+        }
+
+        public ActionResult GalleryDetails()
+        {
+            return View();
+        }
         public ActionResult Edit(int id)
         {
             var orderViewItem = _orderService.GetOrderById(id);
