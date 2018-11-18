@@ -10,3 +10,15 @@ C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRest
 C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.Entities\obj\Debug\ClockRestoration.Entities.dll
 C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.Entities\obj\Debug\ClockRestoration.Entities.pdb
 C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.Entities\obj\Debug\ClockRestoration.Entities.csprojAssemblyReference.cache
+E:\ClockRestoration\ClockRestoration.Entities\bin\Debug\ClockRestoration.Entities.dll.config
+E:\ClockRestoration\ClockRestoration.Entities\bin\Debug\ClockRestoration.Entities.dll
+E:\ClockRestoration\ClockRestoration.Entities\bin\Debug\ClockRestoration.Entities.pdb
+E:\ClockRestoration\ClockRestoration.Entities\bin\Debug\EntityFramework.dll
+E:\ClockRestoration\ClockRestoration.Entities\bin\Debug\EntityFramework.SqlServer.dll
+E:\ClockRestoration\ClockRestoration.Entities\bin\Debug\EntityFramework.xml
+E:\ClockRestoration\ClockRestoration.Entities\bin\Debug\EntityFramework.SqlServer.xml
+E:\ClockRestoration\ClockRestoration.Entities\obj\Debug\ClockRestoration.Entities.csproj.CoreCompileInputs.cache
+E:\ClockRestoration\ClockRestoration.Entities\obj\Debug\ClockRestoration.Entities.csproj.CopyComplete
+E:\ClockRestoration\ClockRestoration.Entities\obj\Debug\ClockRestoration.Entities.dll
+E:\ClockRestoration\ClockRestoration.Entities\obj\Debug\ClockRestoration.Entities.pdb
+E:\ClockRestoration\ClockRestoration.Entities\obj\Debug\ClockRestoration.Entities.csprojAssemblyReference.cache

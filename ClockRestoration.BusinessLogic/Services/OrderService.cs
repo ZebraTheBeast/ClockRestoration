@@ -7,7 +7,7 @@ using System.IO;
 
 namespace ClockRestoration.BusinessLogic.Services
 {
-    public class OrderService
+    public class OrderService : IOrderService
     {
         private OrderRepository _orderRepository;
         private DeliveryRepository _deliveryRepository;
@@ -15,13 +15,13 @@ namespace ClockRestoration.BusinessLogic.Services
         private BrandRepository _brandRepository;
         private ClockTypeRepository _clockTypeRepository;
 
-        public OrderService(string connectionString)
+        public OrderService()
         {
-            _orderRepository = new OrderRepository(connectionString);
-            _deliveryRepository = new DeliveryRepository(connectionString);
-            _paymentRepository = new PaymentRepository(connectionString);
-            _brandRepository = new BrandRepository(connectionString);
-            _clockTypeRepository = new ClockTypeRepository(connectionString);
+            _orderRepository = new OrderRepository();
+            _deliveryRepository = new DeliveryRepository();
+            _paymentRepository = new PaymentRepository();
+            _brandRepository = new BrandRepository();
+            _clockTypeRepository = new ClockTypeRepository();
         }
 
         public ResponseOrderView GetInfoForOrder()
@@ -101,7 +101,7 @@ namespace ClockRestoration.BusinessLogic.Services
                 Delivery = order.Delivery.Title,
                 Id = order.Id,
                 ImageUrl = order.ImageUrl,
-                Name = order.User.Name,
+                Name = order.User.UserName,
                 Payment = order.Payment.Title,
                 Phone = order.PhoneNumber,
                 Status = status.ToString()

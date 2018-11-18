@@ -15,9 +15,9 @@ namespace ClockRestoration.DataAccess.Repositories
         DbSet<TEntity> _dbSet;
         ClockRestorationContext _context;
 
-        public GenericRepository(string connectionString)
+        public GenericRepository()
         {
-            _context = new ClockRestorationContext(connectionString);
+            _context = new ClockRestorationContext();
             _dbSet = _context.Set<TEntity>();
         }
         public void Add(TEntity entity)

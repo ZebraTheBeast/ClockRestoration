@@ -5,7 +5,7 @@ namespace ClockRestoration.DataAccess.Repositories
 {
     public class PaymentRepository : GenericRepository<Payment>, IPaymentRepository
     {
-        public PaymentRepository(string connectionString) : base(connectionString)
+        public PaymentRepository()
         {
 
         }

@@ -13,12 +13,11 @@ namespace ClockRestoration.Controllers
 {
     public class HomeController : Controller
     {
-        private OrderService _orderService;
+        private readonly IOrderService _orderService;
 
-        public HomeController()
+        public HomeController(IOrderService orderService)
         {
-            var connectionString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
-            _orderService = new OrderService(connectionString);
+            this._orderService = orderService;
         }
 
         public ActionResult Index()

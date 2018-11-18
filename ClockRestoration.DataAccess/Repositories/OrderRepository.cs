@@ -5,11 +5,8 @@ namespace ClockRestoration.DataAccess.Repositories
 {
     public class OrderRepository : GenericRepository<Order>, IOrderRepository
     {
-        private string _connectionString;
-
-        public OrderRepository(string connectionString) : base(connectionString)
+        public OrderRepository()
         {
-            _connectionString = connectionString;
         }
 
     }
