@@ -5,7 +5,7 @@ namespace ClockRestoration.DataAccess.Repositories
 {
     public class ClockTypeRepository : GenericRepository<ClockType>, IClockTypeRepository
     {
-        public ClockTypeRepository(string connectionString) : base(connectionString)
+        public ClockTypeRepository()
         {
 
         }

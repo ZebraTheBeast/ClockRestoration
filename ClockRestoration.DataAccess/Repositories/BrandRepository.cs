@@ -5,7 +5,7 @@ namespace ClockRestoration.DataAccess.Repositories
 {
     public class BrandRepository : GenericRepository<Brand>, IBrandRepository
     {
-        public BrandRepository(string connectionString) : base(connectionString)
+        public BrandRepository()
         {
 
         }

@@ -15,3 +15,35 @@ C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRest
 C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.DataAccess\obj\Debug\ClockRestoration.DataAccess.pdb
 C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.DataAccess\obj\Debug\ClockRestoration.DataAccess.Migrations.helpme.resources
 C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.DataAccess\obj\Debug\ClockRestoration.DataAccess.csproj.GenerateResource.cache
+E:\ClockRestoration\ClockRestoration.DataAccess\bin\Debug\ClockRestoration.DataAccess.dll.config
+E:\ClockRestoration\ClockRestoration.DataAccess\bin\Debug\ClockRestoration.DataAccess.dll
+E:\ClockRestoration\ClockRestoration.DataAccess\bin\Debug\ClockRestoration.DataAccess.pdb
+E:\ClockRestoration\ClockRestoration.DataAccess\bin\Debug\EntityFramework.dll
+E:\ClockRestoration\ClockRestoration.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+E:\ClockRestoration\ClockRestoration.DataAccess\bin\Debug\EntityFramework.xml
+E:\ClockRestoration\ClockRestoration.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+E:\ClockRestoration\ClockRestoration.DataAccess\obj\Debug\ClockRestoration.DataAccess.csproj.CoreCompileInputs.cache
+E:\ClockRestoration\ClockRestoration.DataAccess\obj\Debug\ClockRestoration.DataAccess.csproj.CopyComplete
+E:\ClockRestoration\ClockRestoration.DataAccess\obj\Debug\ClockRestoration.DataAccess.dll
+E:\ClockRestoration\ClockRestoration.DataAccess\obj\Debug\ClockRestoration.DataAccess.pdb
+E:\ClockRestoration\ClockRestoration.DataAccess\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+E:\ClockRestoration\ClockRestoration.DataAccess\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\ClockRestoration\ClockRestoration.DataAccess\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+E:\ClockRestoration\ClockRestoration.DataAccess\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\ClockRestoration\ClockRestoration.DataAccess\obj\Debug\ClockRestoration.DataAccess.Migrations.Initial.resources
+E:\ClockRestoration\ClockRestoration.DataAccess\obj\Debug\ClockRestoration.DataAccess.csproj.GenerateResource.cache
+E:\ClockRestoration\ClockRestoration.DataAccess\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+E:\ClockRestoration\ClockRestoration.DataAccess\bin\Debug\Microsoft.Owin.dll
+E:\ClockRestoration\ClockRestoration.DataAccess\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+E:\ClockRestoration\ClockRestoration.DataAccess\bin\Debug\Microsoft.Owin.Security.dll
+E:\ClockRestoration\ClockRestoration.DataAccess\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+E:\ClockRestoration\ClockRestoration.DataAccess\bin\Debug\Newtonsoft.Json.dll
+E:\ClockRestoration\ClockRestoration.DataAccess\bin\Debug\Owin.dll
+E:\ClockRestoration\ClockRestoration.DataAccess\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+E:\ClockRestoration\ClockRestoration.DataAccess\bin\Debug\Microsoft.Owin.xml
+E:\ClockRestoration\ClockRestoration.DataAccess\bin\Debug\Microsoft.Owin.Security.xml
+E:\ClockRestoration\ClockRestoration.DataAccess\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+E:\ClockRestoration\ClockRestoration.DataAccess\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+E:\ClockRestoration\ClockRestoration.DataAccess\bin\Debug\Newtonsoft.Json.xml
+E:\ClockRestoration\ClockRestoration.DataAccess\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+E:\ClockRestoration\ClockRestoration.DataAccess\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
