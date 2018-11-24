@@ -1,5 +1,4 @@
 ﻿body {
-    padding-top: 50px;
     padding-bottom: 20px;
 }
 
@@ -20,7 +19,7 @@
 input,
 select,
 textarea {
-    max-width: 280px;
+    max-width: 100%;
 }
 
 body {
@@ -31,6 +30,121 @@ body {
     padding: 20px;
 }
 
-.main-image img {
-    height: 450px;
+    .main-image img {
+        height: 450px;
+    }
+
+.noresize {
+    resize: none;
+}
+
+.order-block {
+    margin-top: 20px;
+}
+
+.order-name-field {
+    min-width: 30%;
+}
+
+@media (max-width: 767px) {
+    .order-page-name {
+        border-bottom: 4px solid #10828C;
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+    }
+}
+
+@media (min-width: 767px) {
+    .order-page-name {
+        border-right: 4px solid #10828C;
+    }
+}
+
+.page-name {
+    color: #10828C;
+}
+
+.desc img {
+    width: 75%;
+    border-radius: 20%;
+    margin: auto;
+}
+
+.contact-area {
+    margin-top: 12%;
+    margin-bottom: 12%;
+}
+
+.contact-area h1 {
+    color: #10828C;
+}
+
+.contact-area p {
+    line-height: 2;
+    color: #888;
+}
+
+.contact-area a {
+    font-size: 20px;
+}
+
+@media (min-width: 767px) {
+    .desc {
+        border-right: 4px solid #10828C;
+    }
+}
+
+@media (max-width: 767px) {
+    .desc {
+        border-bottom: 4px solid #10828C;
+    }
+
+    .desc img {
+        max-width: 30%;
+    }
+}
+
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+.reg-email {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.reg-password {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+    .form-signin .form-control {
+        position: relative;
+        box-sizing: border-box;
+        height: auto;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border: 0;
+}
+.reg .mb-3, .my-3 {
+    margin-bottom: 1rem !important;
+}
+
+.reg-page {
+    border-bottom: 4px solid #10828C;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
 }

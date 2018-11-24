@@ -27,6 +27,7 @@ namespace ClockRestoration.Controllers
 
         public ActionResult Order()
         {
+            
             var responseOrderView = _orderService.GetInfoForOrder();
             return View(responseOrderView);
         }
@@ -105,6 +106,11 @@ namespace ClockRestoration.Controllers
         {
             _orderService.UpdateOrderStatus(id, OrderStatus.Canceled);
             return RedirectToAction("Details", new { id });
+        }
+
+        public ActionResult AdminPanel()
+        {
+            return View();
         }
     }
 }

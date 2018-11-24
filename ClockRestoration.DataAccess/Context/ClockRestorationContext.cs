@@ -16,7 +16,7 @@ namespace ClockRestoration.DataAccess.Context
 
         public ClockRestorationContext() : base("DefaultConnection")
         {
-            Configuration.LazyLoadingEnabled = false;
+            Configuration.LazyLoadingEnabled = true;
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
