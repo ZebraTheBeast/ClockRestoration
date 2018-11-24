@@ -80,3 +80,4 @@ C:\Users\user\source\repos\ClockRestoration\ClockRestoration.DataAccess\obj\Debu
 C:\Users\user\source\repos\ClockRestoration\ClockRestoration.DataAccess\obj\Debug\ClockRestoration.DataAccess.csproj.CopyComplete
 C:\Users\user\source\repos\ClockRestoration\ClockRestoration.DataAccess\obj\Debug\ClockRestoration.DataAccess.dll
 C:\Users\user\source\repos\ClockRestoration\ClockRestoration.DataAccess\obj\Debug\ClockRestoration.DataAccess.pdb
+C:\Users\user\source\repos\ClockRestoration\ClockRestoration.DataAccess\obj\Debug\ClockRestoration.DataAccess.Migrations.migration1.resources

@@ -206,6 +206,10 @@
     </Compile>
     <Compile Include="Infrustructure\ApplicationUserManager.cs" />
     <Compile Include="Infrustructure\IApplicationUserManager.cs" />
+    <Compile Include="Migrations\201811241943004_migration1.cs" />
+    <Compile Include="Migrations\201811241943004_migration1.Designer.cs">
+      <DependentUpon>201811241943004_migration1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\LoginViewModel.cs" />
     <Compile Include="Models\RegisterViewModel.cs" />
@@ -214,6 +218,7 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bg.css" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-reboot.css" />
@@ -330,6 +335,11 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201811241943004_migration1.resx">
+      <DependentUpon>201811241943004_migration1.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

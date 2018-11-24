@@ -101,13 +101,42 @@ namespace ClockRestoration.BusinessLogic.Services
                 Delivery = order.Delivery.Title,
                 Id = order.Id,
                 ImageUrl = order.ImageUrl,
-                Name = order.User.UserName,
+                //Name = order.User.UserName,
                 Payment = order.Payment.Title,
                 Phone = order.PhoneNumber,
                 Status = status.ToString()
             };
 
             return orderView;
+        }
+
+
+        public void Test()
+        {
+            var brand = new Brand
+            {
+                Title = "Brand 1"
+            };
+
+            var clockType = new ClockType
+            {
+                Title = "Clock Type 1"
+            };
+
+            var payment = new Payment
+            {
+                Title = "Payment 1"
+            };
+
+            var delivery = new Delivery
+            {
+                Title = "Delivery 1"
+            };
+
+            _brandRepository.Add(brand);
+            _clockTypeRepository.Add(clockType);
+            _paymentRepository.Add(payment);
+            _deliveryRepository.Add(delivery);
         }
     }
 }

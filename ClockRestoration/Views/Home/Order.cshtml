@@ -1,48 +1,88 @@
 ﻿@model ClockRestoration.ViewModels.ResponseOrderView
+<div class="container">
+    <div class="row order-block">
+        <div class="col-md-5 d-flex order-page-name">
+            <h1 class="my-auto page-name text-right">Оформить заказ</h1>
+        </div>
 
-<h2>Order</h2>
+        <div class="col-md-7">
 
-<div class="row">
-    <div class="col-md-12">
-        @using (Html.BeginForm("MakeOrder", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
-        {
-            <div class="form-group">
-                @Html.LabelFor(m => m.Order.BrandId, "Brand", new { @class = "form-label" })
-                @Html.DropDownListFor(m => m.Order.BrandId, new SelectList(Model.Brands, "Id", "Title"), new { @class = "form-control" })
-            </div>
-            <div class="form-group">
-                @Html.LabelFor(m => m.Order.ClockTypeId, "Clock Type")
-                @Html.DropDownListFor(m => m.Order.ClockTypeId, new SelectList(Model.ClockTypes, "Id", "Title"), new { @class = "form-control" })
-            </div>
-            <div class="form-group">
-                @Html.LabelFor(m => m.Order.Image, "Image")
-                @Html.TextBoxFor(m => m.Order.Image, new { type = "file", accept = "image/*", @class = "form-control", required = "required" })
-            </div>
-            <div class="form-group">
-                @Html.LabelFor(m => m.Order.DeadLine, "Deadline")
-                @Html.TextBoxFor(m => m.Order.DeadLine, new { type = "date", @class = "form-control", min = DateTime.Now.ToString("yyyy-MM-dd"), required = "required" })
-            </div>
-            <div class="form-group">
-                @Html.LabelFor(m => m.Order.Comments, "Comments")
-                @Html.TextAreaFor(m => m.Order.Comments, new { @class = "form-control" })
-            </div>
-            <div class="form-group">
-                @Html.LabelFor(m => m.Order.PhoneNumber, "Phone number")
-                @Html.TextBoxFor(m => m.Order.PhoneNumber, new { @class = "form-control", placeholder = "333-333-3333", pattern = "[0-9]{3}-[0-9]{3}-[0-9]{4}", required = "required" })
-            </div>
-            <div class="form-group">
-                @Html.LabelFor(m => m.Order.DeliveryId, "Delivery")
-                @Html.DropDownListFor(m => m.Order.DeliveryId, new SelectList(Model.Deliveries, "Id", "Title"), new { @class = "form-control" })
-            </div>
-            <div class="form-group">
-                @Html.LabelFor(m => m.Order.PaymentId, "Payment")
-                @Html.DropDownListFor(m => m.Order.PaymentId, new SelectList(Model.Payments, "Id", "Title"), new { @class = "form-control" })
-            </div>
-            <div class="form-group">
-                @Html.LabelFor(m => m.Order.Address, "Address")
-                @Html.TextBoxFor(m => m.Order.Address, new { @class = "form-control", required = "required" })
-            </div>
-            <button type="submit" class="btn btn-success">Send</button>
-        }
+            @using (Html.BeginForm("MakeOrder", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+                <div class="form-group input-group">
+                    <span class="input-group-prepend  order-name-field">
+                        @Html.LabelFor(m => m.Order.ClockTypeId, "Тип часов", new { @class = "input-group-text w-100" })
+                    </span>
+                    @Html.DropDownListFor(m => m.Order.ClockTypeId, new SelectList(Model.ClockTypes, "Id", "Title"), new { @class = "form-control" })
+                </div>
+
+                <div class="form-group input-group">
+                    <span class="input-group-prepend order-name-field">
+                        @Html.LabelFor(m => m.Order.BrandId, "Бренд", new { @class = "input-group-text w-100" })
+                    </span>
+                    @Html.DropDownListFor(m => m.Order.BrandId, new SelectList(Model.Brands, "Id", "Title"), new { @class = "form-control" })
+                </div>
+
+                <div class="form-group input-group">
+                    <span class="input-group-prepend order-name-field">
+                        @Html.LabelFor(m => m.Order.PhoneNumber, "Номер телефона", new { @class = "input-group-text w-100" })
+                    </span>
+                    @Html.TextBoxFor(m => m.Order.PhoneNumber, new { @class = "form-control", placeholder = "3333333333", pattern = "[0-9]{10}", required = "required" })
+                </div>
+
+                <div class="form-group input-group">
+                    <span class="input-group-prepend order-name-field">
+                        @Html.LabelFor(m => m.Order.DeliveryId, "Способ доставки", new { @class = "input-group-text w-100" })
+                    </span>
+                    @Html.DropDownListFor(m => m.Order.DeliveryId, new SelectList(Model.Deliveries, "Id", "Title"), new { @class = "form-control" })
+                </div>
+
+                <div class="form-group input-group">
+                    <span class="input-group-prepend order-name-field">
+                        @Html.LabelFor(m => m.Order.PaymentId, "Способ оплаты", new { @class = "input-group-text w-100" })
+                    </span>
+                    @Html.DropDownListFor(m => m.Order.PaymentId, new SelectList(Model.Payments, "Id", "Title"), new { @class = "form-control" })
+                </div>
+
+                <div class="form-group input-group">
+                    <span class="input-group-prepend order-name-field">
+                        @Html.LabelFor(m => m.Order.Address, "Адрес", new { @class = "input-group-text w-100" })
+                    </span>
+                    @Html.TextBoxFor(m => m.Order.Address, new { @class = "form-control", required = "required" })
+                </div>
+
+                <div class="form-group input-group">
+                    <span class="input-group-prepend order-name-field">
+                        @Html.LabelFor(m => m.Order.Comments, "Комментарии", new { @class = "input-group-text w-100" })
+                    </span>
+                    @Html.TextAreaFor(m => m.Order.Comments, new { @class = "form-control noresize" })
+                </div>
+
+                <div class="form-group input-group">
+                    <span class="input-group-prepend  order-name-field">
+                        @Html.LabelFor(m => m.Order.DeadLine, "Желаемая дата выполнения заказа", new { @class = "input-group-text w-100" })
+                    </span>
+                    @Html.TextBoxFor(m => m.Order.DeadLine, new { type = "date", @class = "form-control noresize", min = DateTime.Now.ToString("yyyy-MM-dd"), required = "required" })
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend order-name-field">
+                        <span class="input-group-text  w-100">Загрузите фото</span>
+                    </div>
+
+                    <div class="form-group custom-file">
+
+                        @Html.TextBoxFor(m => m.Order.Image, new { type = "file", accept = "image/*", @class = "custom-file-input", required = "required" })
+
+                        @Html.LabelFor(m => m.Order.Image, "Выбрать фото", new { @class = "custom-file-label" })
+                        <br />
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-success btn-block">Оформить заказ</button>
+
+            }
+
+        </div>
     </div>
 </div>

@@ -1,32 +1,31 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Contacts";
 }
-<br />
-<div class="row text-center">
-    <div class="col-md-12">
-        <h2>Контакты</h2>
-        <hr />
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12 desc d-flex mt-3">
+            <img src="~/Content/Images/makar.jpg" class="img-fluid contact-image">
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-12 text-center contact-area">
+            <h1>Makar Nosov</h1>
+            <div class="align-middle text-info">
+                <h5 class="my-1">
+                    Телефон: 0630000000
+                </h5>
+                <h5 class="my-1">
+                    E-mail: makarnosov.1973@gmail.com
+                </h5>
+                <h5 class="my-3">
+                    или
+                </h5>
+                <h5 class="my-3">
+                    <a class="btn btn-info" href="@Url.Action("Order", "Home",
+                new { @class = "nav-link" })">
+                        Оформить заказ на сайте
+                    </a>
+
+                </h5>
+            </div>
+        </div>
     </div>
-</div>
-<div class="row text-center">
-    <div class="col-md-6">
-        <img class="img-thumbnail" src="~/Content/Images/makar.jpg" />
-    </div>
-    <div class="col-md-4 m-auto">
-        <h2>MAKAR NOSOV</h2>
-        <br />
-        <h5 class="align-middle">
-        Тел.: 0630000000
-        <br />
-        E-mail: <a href="makarnosov.1973@gmail.com" style="color: black">makarnosov.1973@gmail.com</a>
-        <br />
-        или
-        <br />
-            <a href="@Url.Action("Home", "Order")" class="nav-link">
-                Сделать заказ на сайте
-            </a>
-        </h5>
-    </div>
-    <div class="col-md-2"></div>
 </div>

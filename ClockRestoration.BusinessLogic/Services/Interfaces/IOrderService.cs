@@ -11,5 +11,6 @@ namespace ClockRestoration
         GetOrdersView GetOrders();
         void UpdateOrderStatus(int id, OrderStatus status);
         void UpdateOrder(OrderViewItem orderViewItem);
+        void Test();
     }
 }

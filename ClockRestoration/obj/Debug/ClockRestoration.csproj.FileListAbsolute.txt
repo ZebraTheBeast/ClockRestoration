@@ -405,3 +405,5 @@ C:\Users\user\source\repos\ClockRestoration\ClockRestoration\obj\Debug\ClockRest
 C:\Users\user\source\repos\ClockRestoration\ClockRestoration\obj\Debug\ClockRestoration.csproj.CopyComplete
 C:\Users\user\source\repos\ClockRestoration\ClockRestoration\obj\Debug\ClockRestoration.dll
 C:\Users\user\source\repos\ClockRestoration\ClockRestoration\obj\Debug\ClockRestoration.pdb
+C:\Users\user\source\repos\ClockRestoration\ClockRestoration\obj\Debug\ClockRestoration.Migrations.migration1.resources
+C:\Users\user\source\repos\ClockRestoration\ClockRestoration\obj\Debug\ClockRestoration.csproj.GenerateResource.cache
