@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using ClockRestoration.DataAccess.Interfaces;
 using ClockRestoration.DataAccess.Repositories;
 using ClockRestoration.Entities;
 using ClockRestoration.ViewModels;
@@ -9,19 +10,19 @@ namespace ClockRestoration.BusinessLogic.Services
 {
     public class OrderService : IOrderService
     {
-        private OrderRepository _orderRepository;
-        private DeliveryRepository _deliveryRepository;
-        private PaymentRepository _paymentRepository;
-        private BrandRepository _brandRepository;
-        private ClockTypeRepository _clockTypeRepository;
+        private IOrderRepository _orderRepository;
+        private IDeliveryRepository _deliveryRepository;
+        private IPaymentRepository _paymentRepository;
+        private IBrandRepository _brandRepository;
+        private IClockTypeRepository _clockTypeRepository;
 
-        public OrderService()
+        public OrderService(IOrderRepository orderRepository, IDeliveryRepository deliveryRepository, IPaymentRepository paymentRepository, IBrandRepository brandRepository, IClockTypeRepository clockTypeRepository)
         {
-            _orderRepository = new OrderRepository();
-            _deliveryRepository = new DeliveryRepository();
-            _paymentRepository = new PaymentRepository();
-            _brandRepository = new BrandRepository();
-            _clockTypeRepository = new ClockTypeRepository();
+            _orderRepository = orderRepository;
+            _deliveryRepository = deliveryRepository;
+            _paymentRepository = paymentRepository;
+            _brandRepository = brandRepository;
+            _clockTypeRepository = clockTypeRepository;
         }
 
         public ResponseOrderView GetInfoForOrder()

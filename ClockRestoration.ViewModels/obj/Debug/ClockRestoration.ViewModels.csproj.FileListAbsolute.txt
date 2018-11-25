@@ -65,3 +65,28 @@ C:\Users\user\source\repos\ClockRestoration\ClockRestoration.ViewModels\obj\Debu
 C:\Users\user\source\repos\ClockRestoration\ClockRestoration.ViewModels\obj\Debug\ClockRestoration.ViewModels.csproj.CopyComplete
 C:\Users\user\source\repos\ClockRestoration\ClockRestoration.ViewModels\obj\Debug\ClockRestoration.ViewModels.dll
 C:\Users\user\source\repos\ClockRestoration\ClockRestoration.ViewModels\obj\Debug\ClockRestoration.ViewModels.pdb
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.ViewModels\bin\Debug\ClockRestoration.ViewModels.dll.config
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.ViewModels\bin\Debug\EntityFramework.dll
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.ViewModels\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.ViewModels\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.ViewModels\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.ViewModels\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.ViewModels\bin\Debug\Microsoft.Owin.dll
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.ViewModels\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.ViewModels\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.ViewModels\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.ViewModels\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.ViewModels\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.ViewModels\bin\Debug\Owin.dll
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.ViewModels\bin\Debug\EntityFramework.xml
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.ViewModels\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.ViewModels\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.ViewModels\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.ViewModels\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.ViewModels\bin\Debug\Microsoft.Owin.xml
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.ViewModels\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.ViewModels\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.ViewModels\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.ViewModels\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.ViewModels\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.ViewModels\obj\Debug\ClockRestoration.ViewModels.csproj.CopyComplete

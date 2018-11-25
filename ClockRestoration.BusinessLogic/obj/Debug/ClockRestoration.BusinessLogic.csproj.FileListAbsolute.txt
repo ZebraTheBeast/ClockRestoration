@@ -2,12 +2,9 @@ C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRest
 C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\bin\Debug\ClockRestoration.BusinessLogic.dll
 C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\bin\Debug\ClockRestoration.BusinessLogic.pdb
 C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\bin\Debug\ClockRestoration.DataAccess.dll
-C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\bin\Debug\ClockRestoration.Entities.dll
 C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\bin\Debug\EntityFramework.dll
 C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\bin\Debug\ClockRestoration.DataAccess.pdb
 C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\bin\Debug\ClockRestoration.DataAccess.dll.config
-C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\bin\Debug\ClockRestoration.Entities.pdb
-C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\bin\Debug\ClockRestoration.Entities.dll.config
 C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\bin\Debug\EntityFramework.xml
 C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\obj\Debug\ClockRestoration.BusinessLogic.csprojAssemblyReference.cache
 C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\obj\Debug\ClockRestoration.BusinessLogic.csproj.CopyComplete
@@ -104,3 +101,28 @@ C:\Users\user\source\repos\ClockRestoration\ClockRestoration.BusinessLogic\obj\D
 C:\Users\user\source\repos\ClockRestoration\ClockRestoration.BusinessLogic\obj\Debug\ClockRestoration.BusinessLogic.csproj.CopyComplete
 C:\Users\user\source\repos\ClockRestoration\ClockRestoration.BusinessLogic\obj\Debug\ClockRestoration.BusinessLogic.dll
 C:\Users\user\source\repos\ClockRestoration\ClockRestoration.BusinessLogic\obj\Debug\ClockRestoration.BusinessLogic.pdb
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\bin\Debug\ClockRestoration.BusinessLogic.dll.config
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\bin\Debug\Microsoft.Owin.dll
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\bin\Debug\Ninject.dll
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\bin\Debug\Owin.dll
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\bin\Debug\ClockRestoration.ViewModels.dll.config
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\bin\Debug\Microsoft.Owin.xml
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.BusinessLogic\bin\Debug\Ninject.xml
