@@ -28,6 +28,7 @@ namespace ClockRestoration.App_Start
             Bind<IDeliveryRepository>().To<DeliveryRepository>();
             Bind<IOrderRepository>().To<OrderRepository>();
             Bind<IPaymentRepository>().To<PaymentRepository>();
+            Bind<IUserRepository>().To<UserRepository>();
 
             Bind<IAuthenticationManager>().ToMethod((context) => System.Web.HttpContext.Current.GetOwinContext().Authentication);
             Bind<IApplicationUserManager>().To<ApplicationUserManager>();
@@ -44,8 +45,8 @@ namespace ClockRestoration.App_Start
                  });
 
             Bind<ClockRestorationContext>().ToSelf();
+            Bind<IDataContext>().To<ClockRestorationContext>();
 
-    
         }
 
         public class ApplicationUserStore : UserStore<ApplicationUser>

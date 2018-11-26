@@ -5,7 +5,7 @@ namespace ClockRestoration.Entities
     public class Order : BaseEntity
     {
         public virtual ApplicationUser User { get; set; }
-        public long UserId { get; set; }
+        public string UserId { get; set; }
 
         public virtual Delivery Delivery { get; set; }
         public long DeliveryId { get; set; }

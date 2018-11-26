@@ -98,3 +98,4 @@ C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRest
 C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.DataAccess\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.DataAccess\obj\Debug\ClockRestoration.DataAccess.Migrations.Initial.resources
 C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.DataAccess\obj\Debug\ClockRestoration.DataAccess.Migrations.migration1.resources
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration.DataAccess\obj\Debug\ClockRestoration.DataAccess.Migrations.id.resources

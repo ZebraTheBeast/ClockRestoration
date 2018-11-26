@@ -27,7 +27,6 @@ namespace ClockRestoration.Controllers
 
         public ActionResult Order()
         {
-            
             var responseOrderView = _orderService.GetInfoForOrder();
             return View(responseOrderView);
         }
@@ -38,7 +37,6 @@ namespace ClockRestoration.Controllers
 
             var requestOrderView = new RequestOrderView();
             requestOrderView = responseOrderView.Order;
-            requestOrderView.UserId = 1;
 
             var fileId = Guid.NewGuid().ToString().Replace("-", "");
             var fileName = Path.GetFileName(requestOrderView.Image.FileName);
@@ -46,7 +44,7 @@ namespace ClockRestoration.Controllers
             Directory.CreateDirectory(Path.Combine(Server.MapPath("~/Uploads/Photo/"), requestOrderView.UserId.ToString(), fileId));
             requestOrderView.Image.SaveAs(path);
             string fileUrl = $"Uploads/Photo/{requestOrderView.UserId.ToString()}/{fileId}/{fileName}";
-            _orderService.MakeOrder(requestOrderView, fileUrl);
+            _orderService.MakeOrder(requestOrderView, fileUrl, User.Identity.Name);
 
             return RedirectToAction("Index");
         }

@@ -3,6 +3,7 @@ using ClockRestoration.DataAccess.Interfaces;
 using ClockRestoration.DataAccess.Repositories;
 using ClockRestoration.Entities;
 using ClockRestoration.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.IO;
 
@@ -15,14 +16,16 @@ namespace ClockRestoration.BusinessLogic.Services
         private IPaymentRepository _paymentRepository;
         private IBrandRepository _brandRepository;
         private IClockTypeRepository _clockTypeRepository;
+        private IUserRepository _userRepository;
 
-        public OrderService(IOrderRepository orderRepository, IDeliveryRepository deliveryRepository, IPaymentRepository paymentRepository, IBrandRepository brandRepository, IClockTypeRepository clockTypeRepository)
+        public OrderService(IOrderRepository orderRepository, IDeliveryRepository deliveryRepository, IPaymentRepository paymentRepository, IBrandRepository brandRepository, IClockTypeRepository clockTypeRepository, IUserRepository userRepository)
         {
             _orderRepository = orderRepository;
             _deliveryRepository = deliveryRepository;
             _paymentRepository = paymentRepository;
             _brandRepository = brandRepository;
             _clockTypeRepository = clockTypeRepository;
+            _userRepository = userRepository;
         }
 
         public ResponseOrderView GetInfoForOrder()
@@ -36,11 +39,13 @@ namespace ClockRestoration.BusinessLogic.Services
             return responseOrderView;
         }
 
-        public void MakeOrder(RequestOrderView requestOrderView, string fileName)
+        public void MakeOrder(RequestOrderView requestOrderView, string fileName, string userName)
         {
             var order = new Order();
             order = Mapper.Map<RequestOrderView, Order>(requestOrderView);
 
+            var user = _userRepository.GetByEmail(userName);
+            order.UserId = user.Id;
             order.ImageUrl = fileName;
             order.Status = OrderStatus.Pending;
             _orderRepository.Add(order);
@@ -102,7 +107,7 @@ namespace ClockRestoration.BusinessLogic.Services
                 Delivery = order.Delivery.Title,
                 Id = order.Id,
                 ImageUrl = order.ImageUrl,
-                //Name = order.User.UserName,
+                Name = $"{order.User.FirstName} {order.User.LastName}",
                 Payment = order.Payment.Title,
                 Phone = order.PhoneNumber,
                 Status = status.ToString()
@@ -139,5 +144,6 @@ namespace ClockRestoration.BusinessLogic.Services
             _paymentRepository.Add(payment);
             _deliveryRepository.Add(delivery);
         }
+
     }
 }

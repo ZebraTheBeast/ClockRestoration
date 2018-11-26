@@ -5,102 +5,94 @@
     <div>
         <h4>Order №@Model.Id</h4>
         <hr />
-        <dl class="dl-horizontal">
-            <dt>
-                @Html.DisplayNameFor(model => model.Status)
-            </dt>
 
-            <dd>
-                @Html.DisplayFor(model => model.Status)
-            </dd>
+        <div class="input-group">
+            <span class="input-group-text">
+                Статус
+            </span>
+            <input type="text" class="form-control" value="@Html.DisplayFor(model => model.Status)"> 
+        </div>
 
-            <dt>
-                @Html.DisplayNameFor(model => model.Name)
-            </dt>
+       
+            <div class="input-group">
+                <span class="input-group-text">
+                    ФИО
+                </span>
+                <input type="text" class="form-control" value="@Html.DisplayFor(model => model.Name)">
+            </div>
 
-            <dd>
-                @Html.DisplayFor(model => model.Name)
-            </dd>
+            <div class="input-group">
+                <span class="input-group-text">
+                    Адрес
+                </span>
+                <input type="text" class="form-control" value="@Html.DisplayFor(model => model.Address)">
+            </div>
 
-            <dt>
-                @Html.DisplayNameFor(model => model.Address)
-            </dt>
+            <div class="input-group">
+                <span class="input-group-text">
+                    Номер телефона
+                </span>
+                <input type="text" class="form-control" value="@Html.DisplayFor(model => model.Phone)">
+            </div>
 
-            <dd>
-                @Html.DisplayFor(model => model.Address)
-            </dd>
+            <div class="input-group">
+                <span class="input-group-text">
+                    Дата окончания работ
+                </span>
+                <input type="text" class="form-control" value="@Html.DisplayFor(model => model.DeadLine)">
+            </div>
 
-            <dt>
-                @Html.DisplayNameFor(model => model.Phone)
-            </dt>
+            <div class="input-group">
+                <span class="input-group-text">
+                    Бренд
+                </span>
+                <input type="text" class="form-control" value="@Html.DisplayFor(model => model.Brand)">
+            </div>
 
-            <dd>
-                @Html.DisplayFor(model => model.Phone)
-            </dd>
+            <div class="input-group">
+                <span class="input-group-text">
+                    Тип часов
+                </span>
+                <input type="text" class="form-control" value="@Html.DisplayFor(model => model.ClockType)">
+            </div>
 
-            <dt>
-                @Html.DisplayNameFor(model => model.DeadLine)
-            </dt>
+            <div class="input-group">
+                <span class="input-group-text">
+                    Фото
+                </span>
+                <img src="~/@Model.ImageUrl" style="max-width: 50%; max-height: 300px"/>
+                
+            </div>
+                
+            
 
-            <dd>
-                @Model.DeadLine.ToShortDateString()
-            </dd>
+            <div class="input-group">
+                <span class="input-group-text">
+                    Комментарии
+                </span>
+                <input type="text" class="form-control" value="@Html.DisplayFor(model => model.Comments)">
+            </div>
 
-            <dt>
-                @Html.DisplayNameFor(model => model.Brand)
-            </dt>
+            <div class="input-group">
+                <span class="input-group-text">
+                    Способ доставки
+                </span>
+                <input type="text" class="form-control" value="@Html.DisplayFor(model => model.Delivery)">
+            </div>
 
-            <dd>
-                @Html.DisplayFor(model => model.Brand)
-            </dd>
+            <div class="input-group">
+                <span class="input-group-text">
+                    Способ оплаты
+                </span>
+                <input type="text" class="form-control" value="@Html.DisplayFor(model => model.Payment)">
+            </div>
 
-            <dt>
-                @Html.DisplayNameFor(model => model.ClockType)
-            </dt>
-
-            <dd>
-                @Html.DisplayFor(model => model.ClockType)
-            </dd>
-
-            <dt>
-                Image
-            </dt>
-
-            <dd>
-                <img src="~/@Model.ImageUrl" />
-            </dd>
-
-            <dt>
-                @Html.DisplayNameFor(model => model.Comments)
-            </dt>
-
-            <dd>
-                @Html.DisplayFor(model => model.Comments)
-            </dd>
-
-            <dt>
-                @Html.DisplayNameFor(model => model.Delivery)
-            </dt>
-
-            <dd>
-                @Html.DisplayFor(model => model.Delivery)
-            </dd>
-
-            <dt>
-                @Html.DisplayNameFor(model => model.Payment)
-            </dt>
-
-            <dd>
-                @Html.DisplayFor(model => model.Payment)
-            </dd>
-
-        </dl>
     </div>
     <p>
-        @Html.ActionLink("Edit", "Edit", new { id = Model.Id }, new { @class = "btn btn-default" })
-        @Html.ActionLink("Confirm", "ConfirmOrder", new { id = Model.Id }, new { @class = "btn btn-success" })
-        @Html.ActionLink("Done", "DoneOrder", new { id = Model.Id }, new { @class = "btn btn-primary" })
-        @Html.ActionLink("Cancel", "CancelOrder", new { id = Model.Id }, new { @class = "btn btn-danger" })
-        @Html.ActionLink("Back to List", "GetOrders", new { }, new { @class = "btn btn-default" })
+        @Html.ActionLink("Изменить заказ", "Edit", new { id = Model.Id }, new { @class = "btn btn-default" })
+        @Html.ActionLink("Подтвердить", "ConfirmOrder", new { id = Model.Id }, new { @class = "btn btn-success" })
+        @Html.ActionLink("Выполнен", "DoneOrder", new { id = Model.Id }, new { @class = "btn btn-primary" })
+        @Html.ActionLink("Отменить", "CancelOrder", new { id = Model.Id }, new { @class = "btn btn-danger" })
+        @Html.ActionLink("Ко всем заказов", "GetOrders", new { }, new { @class = "btn btn-default" })
     </p>
 </div>

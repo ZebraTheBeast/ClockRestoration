@@ -5,19 +5,19 @@
     <table class="table">
         <tr>
             <th>
-                Id
+                Номер
             </th>
             <th>
-                Status
+                Статус
             </th>
             <th>
-                Name
+                ФИО
             </th>
             <th>
-                Deadline
+                Время окончания работы
             </th>
             <th>
-                Brand
+                Бренд
             </th>
             <th></th>
         </tr>
@@ -41,7 +41,7 @@
                     @Html.DisplayFor(modelItem => item.Brand)
                 </td>
                 <td>
-                    @Html.ActionLink("Details", "Details", new { id = item.Id })
+                    @Html.ActionLink("Подробнее", "Details", new { id = item.Id })
                 </td>
             </tr>
         }
