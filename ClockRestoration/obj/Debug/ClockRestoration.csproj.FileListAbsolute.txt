@@ -100,16 +100,13 @@ C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRest
 C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration\obj\Debug\ClockRestoration.pdb
 C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration\bin\ClockRestoration.BusinessLogic.dll
 C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration\bin\ClockRestoration.DataAccess.dll
-C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration\bin\ClockRestoration.Entities.dll
 C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration\bin\ClockRestoration.BusinessLogic.pdb
 C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration\bin\ClockRestoration.DataAccess.pdb
-C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration\bin\ClockRestoration.Entities.pdb
 C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration\bin\EntityFramework.dll
 C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration\bin\EntityFramework.SqlServer.dll
 C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration\bin\EntityFramework.xml
 C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration\bin\EntityFramework.SqlServer.xml
 C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration\bin\ClockRestoration.DataAccess.dll.config
-C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration\bin\ClockRestoration.Entities.dll.config
 C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration\bin\ClockRestoration.ViewModels.dll
 C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration\bin\AutoMapper.dll
 C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration\bin\System.ValueTuple.dll
@@ -407,3 +404,33 @@ C:\Users\user\source\repos\ClockRestoration\ClockRestoration\obj\Debug\ClockRest
 C:\Users\user\source\repos\ClockRestoration\ClockRestoration\obj\Debug\ClockRestoration.pdb
 C:\Users\user\source\repos\ClockRestoration\ClockRestoration\obj\Debug\ClockRestoration.Migrations.migration1.resources
 C:\Users\user\source\repos\ClockRestoration\ClockRestoration\obj\Debug\ClockRestoration.csproj.GenerateResource.cache
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration\obj\Debug\ClockRestoration.Migrations.migration1.resources
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration\obj\Debug\ClockRestoration.csproj.GenerateResource.cache
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration\bin\Microsoft.Owin.dll
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration\bin\Microsoft.Owin.Security.dll
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration\bin\Ninject.dll
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration\bin\Ninject.Web.Common.dll
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration\bin\Ninject.Web.Common.WebHost.dll
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration\bin\Ninject.Web.Mvc.dll
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration\bin\Owin.dll
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration\bin\WebActivatorEx.dll
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration\bin\ClockRestoration.BusinessLogic.dll.config
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration\bin\ClockRestoration.ViewModels.dll.config
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration\bin\Microsoft.Owin.xml
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration\bin\Microsoft.Owin.Security.xml
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration\bin\Ninject.xml
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration\bin\Ninject.Web.Common.xml
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration\bin\Ninject.Web.Common.WebHost.xml
+C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration\bin\Ninject.Web.Mvc.xml

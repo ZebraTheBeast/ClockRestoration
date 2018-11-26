@@ -200,6 +200,7 @@
     <Compile Include="App_Start\NinjectRegistrations.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -305,6 +306,7 @@
     <Content Include="Views\Home\Gallery.cshtml" />
     <Content Include="Views\Home\GalleryDetails.cshtml" />
     <Content Include="Views\Home\Contacts.cshtml" />
+    <Content Include="Views\Admin\AdminPanel.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

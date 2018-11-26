@@ -10,6 +10,8 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using ClockRestoration.Data.Context;
 using ClockRestoration.DataAccess.Context;
 using System.Web.ModelBinding;
+using ClockRestoration.DataAccess.Interfaces;
+using ClockRestoration.DataAccess.Repositories;
 
 namespace ClockRestoration.App_Start
 {
@@ -20,6 +22,14 @@ namespace ClockRestoration.App_Start
             Unbind<ModelValidatorProvider>();
 
             Bind<IOrderService>().To<OrderService>();
+
+            Bind<IBrandRepository>().To<BrandRepository>();
+            Bind<IClockTypeRepository>().To<ClockTypeRepository>();
+            Bind<IDeliveryRepository>().To<DeliveryRepository>();
+            Bind<IOrderRepository>().To<OrderRepository>();
+            Bind<IPaymentRepository>().To<PaymentRepository>();
+            Bind<IUserRepository>().To<UserRepository>();
+
             Bind<IAuthenticationManager>().ToMethod((context) => System.Web.HttpContext.Current.GetOwinContext().Authentication);
             Bind<IApplicationUserManager>().To<ApplicationUserManager>();
             Bind<IUserStore<ApplicationUser>>().To<ApplicationUserStore>();
@@ -36,6 +46,7 @@ namespace ClockRestoration.App_Start
 
             Bind<ClockRestorationContext>().ToSelf();
             Bind<IDataContext>().To<ClockRestorationContext>();
+
         }
 
         public class ApplicationUserStore : UserStore<ApplicationUser>

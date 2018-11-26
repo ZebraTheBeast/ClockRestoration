@@ -22,7 +22,7 @@
                     <li class="nav-item">@Html.ActionLink("Главная", "Index", "Home", new { }, new { @class = "nav-link" })</li>
                     <li class="nav-item">@Html.ActionLink("Галерея", "Gallery", "Home", new { }, new { @class = "nav-link" })</li>
                     <li class="nav-item">@Html.ActionLink("Сделать заказ", "Order", "Home", new { }, new { @class = "nav-link" })</li>
-                    <li class="nav-item">@Html.ActionLink("Просмотр заказов", "GetOrders", "Home", new { }, new { @class = "nav-link" })</li>
+                    <li class="nav-item">@Html.ActionLink("Админ панель", "AdminPanel", "Admin", new { }, new { @class = "nav-link" })</li>
                     <li class="nav-item">@Html.ActionLink("Контакты", "Contacts", "Home", new { }, new { @class = "nav-link" })</li>
                 </ul>
 
@@ -47,12 +47,12 @@
                     <ul class="navbar-nav navbar-right">
                         <li class="nav-item">
                             <a href="@Url.Action("Index", "Cabinet")" class="nav-link">
-                                <i class="glyphicon glyphicon-info-sign">&nbsp;</i> My Cabinet
+                                <i class="glyphicon glyphicon-info-sign">&nbsp;</i>Мой кабинет
                             </a>
                         </li>
-                        <li class="nav-item nav-link">
+                        <li class="nav-item">
                             <a href="@Url.Action("SignOut", "Account")" class="nav-link">
-                                <i class="glyphicon glyphicon-log-out">&nbsp;</i> Sign Out
+                                <i class="glyphicon glyphicon-log-out">&nbsp;</i> Выйти
                             </a>
                         </li>
                     </ul>
