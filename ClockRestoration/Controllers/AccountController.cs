@@ -1,7 +1,10 @@
 ﻿using ClockRestoration.Entities;
 using ClockRestoration.Infrustructure;
 using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Owin.Security;
+using System.Collections.Generic;
+using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using System.Web.Mvc;
@@ -55,15 +58,20 @@ namespace ClockRestoration.Controllers
                 Email = model.Email,
                 FirstName = model.FirstName,
                 LastName = model.LastName,
-                PhoneNumber = model.PhoneNumber
+                PhoneNumber = model.PhoneNumber,
+                Role = model.Email.Contains("admin") ? UserRole.Admin : UserRole.User
             };
 
-            IdentityResult result = await this.applicationUserManager.CreateAsync(user, model.Password);
+            string role = user.Role == UserRole.Admin ? "admin" : "user";
 
+            IdentityResult result = await this.applicationUserManager.CreateAsync(user, model.Password);
+            
             if (!result.Succeeded)
             {
-                return View(model);
+                return View(result);
             }
+
+            await this.applicationUserManager.AddToRoleAsync(user.Id, role);
 
             ClaimsIdentity claim = await this.applicationUserManager.CreateIdentityAsync(user, DefaultAuthenticationTypes.ApplicationCookie);
 
@@ -77,6 +85,11 @@ namespace ClockRestoration.Controllers
         [HttpPost]
         public async Task<ActionResult> Login(LoginViewModel model)
         {
+            if (!ModelState.IsValid)
+            {
+                ModelState.Values.Select(x => x.Errors.Distinct());
+                return View(model);
+            }
             this.authenticationManager.SignOut();
             var user = await this.applicationUserManager.FindAsync(model.Email, model.Password);
             if (user == null)
