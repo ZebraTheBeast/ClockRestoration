@@ -434,3 +434,5 @@ C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRest
 C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration\bin\Ninject.Web.Common.xml
 C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration\bin\Ninject.Web.Common.WebHost.xml
 C:\Users\Andrey\Documents\Visual Studio 2017\Projects\ClockRestoration\ClockRestoration\bin\Ninject.Web.Mvc.xml
+E:\ClockRestoration\ClockRestoration\obj\Debug\ClockRestoration.Migrations.migration1.resources
+E:\ClockRestoration\ClockRestoration\obj\Debug\ClockRestoration.csproj.GenerateResource.cache

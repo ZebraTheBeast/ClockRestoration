@@ -31,5 +31,7 @@ namespace ClockRestoration.Infrustructure
         Task<IdentityResult> UpdateAsync(ApplicationUser user);
 
         Task<IdentityResult> DeleteAsync(ApplicationUser user);
+
+        Task<IdentityResult> AddToRoleAsync(string id, string roleName);
     }
 }
