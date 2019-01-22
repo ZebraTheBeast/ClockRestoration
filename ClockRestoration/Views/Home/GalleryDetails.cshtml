@@ -1,9 +1,14 @@
-﻿
-@{
-    ViewBag.Title = "GalleryDetails";
-}
+﻿@model ClockRestoration.ViewModels.ResponseGalleryDetailsView
 <div class="container">
-    <h2>GalleryDetails</h2>
+    <h2 class="text-center">@Model.Gallery.Title</h2>
+    <div class="row">
+        <div class="col-md-12">
+            @foreach(var photo in Model.Photos)
+            {
+                <img class="img-thumbnail gallery-photo" src="~/@photo.ImageUrl" />
+            }
 
+        </div>
+    </div>
 </div>
 

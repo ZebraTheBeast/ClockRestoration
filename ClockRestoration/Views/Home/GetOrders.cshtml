@@ -1,50 +1,135 @@
 ﻿@model ClockRestoration.ViewModels.GetOrdersView
-<div class="container">
-    <h2>Orders</h2>
 
-    <table class="table">
-        <tr>
-            <th>
-                Номер
-            </th>
-            <th>
-                Статус
-            </th>
-            <th>
-                ФИО
-            </th>
-            <th>
-                Время окончания работы
-            </th>
-            <th>
-                Бренд
-            </th>
-            <th></th>
-        </tr>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 mt-3">
+            <h2 class="text-center">Заказы</h2>
+            <hr />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2 desc">
+            <ul class="nav nav-pills flex-column">
+                <li class="nav-item">
+                    @if (Model.StatusId == 0)
+                    {
+                        @Html.ActionLink("Все заказы", "GetOrders", new { }, new { @class = "nav-link active" })
+                    }
+                    else
+                    {
+                        @Html.ActionLink("Все заказы", "GetOrders", new { }, new { @class = "nav-link" })
+                    }
+                </li>
+                <li class="nav-item">
+                    @if (Model.StatusId == 1)
+                    {
+                        @Html.ActionLink("Ожидают подтверждения", "GetPendingOrders", new { }, new { @class = "nav-link active" })
+                    }
+                    else
+                    {
+                        @Html.ActionLink("Ожидают подтверждения", "GetPendingOrders", new { }, new { @class = "nav-link" })
+                    }
+                </li>
+                <li class="nav-item">
+                    @if (Model.StatusId == 2)
+                    {
+                        @Html.ActionLink("В процессе", "GetInProgressOrders", new { }, new { @class = "nav-link active" })
+                    }
+                    else
+                    {
+                        @Html.ActionLink("В процессе", "GetInProgressOrders", new { }, new { @class = "nav-link" })
+                    }
+                </li>
+                <li class="nav-item">
+                    @if (Model.StatusId == 3)
+                    {
+                        @Html.ActionLink("Выполненные", "GetCompletedOrders", new { }, new { @class = "nav-link active" })
+                    }
+                    else
+                    {
+                        @Html.ActionLink("Выполненные", "GetCompletedOrders", new { }, new { @class = "nav-link" })
+                    }
+                </li>
+                <li class="nav-item">
+                    @if (Model.StatusId == 4)
+                    {
+                        @Html.ActionLink("Отмененные", "GetCanceledOrders", new { }, new { @class = "nav-link active" })
+                    }
+                    else
+                    {
+                        @Html.ActionLink("Отмененные", "GetCanceledOrders", new { }, new { @class = "nav-link" })
+                    }
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-10">
+            <table class="table">
+                <tr>
+                    <th>
+                        Номер
+                    </th>
+                    <th>
+                        Статус
+                    </th>
+                    <th>
+                        ФИО
+                    </th>
+                    <th>
+                        Время окончания работы
+                    </th>
+                    <th>
+                        Бренд
+                    </th>
+                    <th>
+                        Подробнее
+                    </th>
+                </tr>
 
-        @foreach (var item in Model.Orders)
-        {
-            <tr>
-                <td>
-                    @item.Id
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Status)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Name)
-                </td>
-                <td>
-                    @item.DeadLine.ToShortDateString()
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Brand)
-                </td>
-                <td>
-                    @Html.ActionLink("Подробнее", "Details", new { id = item.Id })
-                </td>
-            </tr>
-        }
+                @foreach (var item in Model.Orders)
+                {
 
-    </table>
+                    if (item.Status == "Pending")
+                    {
+                        item.Status = "Ожидание";
+                    }
+
+                    if (item.Status == "InProgress")
+                    {
+                        item.Status = "В процессе";
+                    }
+
+                    if (item.Status == "Canceled")
+                    {
+                        item.Status = "Отменён";
+                    }
+
+                    if (item.Status == "Completed")
+                    {
+                        item.Status = "Выполнен";
+                    }
+                    <tr>
+                        <td>
+                            @item.Id
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Status)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Name)
+                        </td>
+                        <td>
+                            @item.DeadLine.ToShortDateString()
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Brand)
+                        </td>
+                        <td>
+                            @Html.ActionLink("Подробнее", "Details", new { id = item.Id })
+                        </td>
+                    </tr>
+                }
+
+            </table>
+        </div>
+    </div>
 </div>

@@ -1,0 +1,34 @@
+﻿@model ClockRestoration.ViewModels.PaymentEditorView
+
+<div class="container">
+    <div class="row mt-3">
+        <div class="col-md-4 order-page-name d-flex admin-panel-name text-center">
+            <h2 class="my-auto page-name">Настройка способов оплаты</h2>
+        </div>
+        <div class="col-md-8 my-auto">
+            @using (Html.BeginForm("", "Admin", FormMethod.Post))
+            {
+                <div class="form-group input-group">
+                    <span class="input-group-prepend  order-name-field">
+                        <label class="input-group-text w-100">Выберите способ оплаты:</label>
+                    </span>
+                    @Html.DropDownList("PaymentId", new SelectList(Model.Payments, "Id", "Title"), new { @class = "form-control" })
+                    <input type="submit" value="Удалить" formaction=@Url.Action("DeletePayment") formmethod="post" class="btn btn-primary ml-2" />
+                </div>
+
+                <div class="form-group input-group">
+                    <span class="input-group-prepend  order-name-field">
+                        <label for="PaymentTitle" class="input-group-text w-100">Наименование способа оплаты:</label>
+                    </span>
+                    <input type="text" name="PaymentTitle" />
+                    <input type="submit" value="Изменить название" formaction=@Url.Action("EditPayment") formmethod="post" class="btn btn-primary ml-auto" />
+                    <input type="submit" value="Добавить" formaction=@Url.Action("AddPayment") formmethod="post" class="btn btn-primary ml-auto" />
+                </div>
+
+            }
+        </div>
+    </div>
+
+</div>
+
+

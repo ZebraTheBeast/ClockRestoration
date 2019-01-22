@@ -307,6 +307,12 @@
     <Content Include="Views\Home\GalleryDetails.cshtml" />
     <Content Include="Views\Home\Contacts.cshtml" />
     <Content Include="Views\Admin\AdminPanel.cshtml" />
+    <Content Include="Views\Admin\GalleryEditor.cshtml" />
+    <Content Include="Views\Admin\GalleryDetails.cshtml" />
+    <Content Include="Views\Admin\BrandEditor.cshtml" />
+    <Content Include="Views\Admin\DeliveryEditor.cshtml" />
+    <Content Include="Views\Admin\PaymentEditor.cshtml" />
+    <Content Include="Views\Home\Cabinet.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

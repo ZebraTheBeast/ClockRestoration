@@ -1,48 +1,22 @@
-﻿
-@{
-    ViewBag.Title = "Gallery";
-}
+﻿@model ClockRestoration.ViewModels.ResponseGalleryEditorView
 
 <link href="@Url.Content("~/Content/Images/gallery.css")" rel="stylesheet" type="text/css" />
 
 <div class="container">
     <div class="row mt-5">
 
-        <div class="col-md-4 col-sm-4 hovereffect">
-            <figure class="effect-bubba">
-                <img src="~/Content/Images/1.jpg">
-                <figcaption>
-                    <p>Наручные часы</p>
-                    <a href="@Url.Action("GalleryDetails", "Home",
-                new { @class = "nav-link" })">
-                    </a>
-                </figcaption>
-            </figure>
-        </div>
-
-        <div class="col-md-4 col-sm-4 hovereffect">
-            <figure class="effect-bubba">
-                <img src="~/Content/Images/6.jpg">
-                <figcaption>
-                    <p>Интерьерные часы</p>
-                    <a href="@Url.Action("GalleryDetails", "Home",
-                new { @class = "nav-link" })">
-                    </a>
-                </figcaption>
-            </figure>
-        </div>
-
-        <div class="col-md-4 col-sm-4 hovereffect">
-            <figure class="effect-bubba">
-                <img src="~/Content/Images/9.jpg">
-                <figcaption>
-                    <p>Карманные часы</p>
-                    <a href="@Url.Action("GalleryDetails", "Home",
-                new { @class = "nav-link" })">
-                    </a>
-                </figcaption>
-            </figure>
-        </div>
-
+        @foreach (var gallery in Model.Galleries)
+        {
+            <div class="col-md-4 col-sm-4 hovereffect">
+                <figure class="effect-bubba">
+                    <img src="~/@gallery.MainImageUrl">
+                    <figcaption>
+                        <p>@gallery.Title</p>
+                        <a class="nav-link" href="@Url.Action("GalleryDetails", "Home", new { galleryId = gallery.Id })">
+                        </a>
+                    </figcaption>
+                </figure>
+            </div>
+        }
     </div>
 </div>

@@ -1,13 +1,29 @@
-﻿
-@{
-    ViewBag.Title = "AdminPanel";
-}
-
-<h2>AdminPanel</h2>
-
-<ul>
-    <li>@Html.ActionLink("Просмотр заказов", "GetOrders", "Home")</li>
-    <li>
-       
-    </li>
-</ul>
+﻿<div class="container">
+    <div class="row mt-3">
+        <div class="col-md-4 order-page-name d-flex admin-panel-name">
+            <h2 class="my-auto page-name text-center">Панель Администратора</h2>
+        </div>
+        <div class="col-md-8 my-auto">
+            <ul class="nav nav-pills flex-column">
+                <li class="nav-item">
+                    @Html.ActionLink("Просмотр заказов", "GetOrders", "Home", new { }, new { @class = "nav-link admin-panel" })
+                </li>
+                <li class="nav-item">
+                    @Html.ActionLink("Настройки галереи", "GalleryEditor", "Admin", new { @class = "nav-link admin-panel" })
+                </li>
+                <li class="nav-item">
+                    @Html.ActionLink("Настройки брендов", "BrandEditor", "Admin", new { @class = "nav-link admin-panel" })
+                </li>
+                <li class="nav-item">
+                    @Html.ActionLink("Настройки способов доставки", "DeliveryEditor", "Admin", new { @class = "nav-link admin-panel" })
+                </li>
+                <li class="nav-item">
+                    @Html.ActionLink("Настройки способов оплаты", "PaymentEditor", "Admin", new { @class = "nav-link admin-panel" })
+                </li>
+                <li class="nav-item">
+                    @Html.ActionLink("Проверка БД", "CheckDb", "Admin", new { @class = "nav-link admin-panel" })
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

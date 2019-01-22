@@ -11,6 +11,8 @@ namespace ClockRestoration.ViewModels
 
         public RequestOrderView Order { get; set; }
 
+        public string UserPhoneNumber { get; set; }
+
         public ResponseOrderView()
         {
             Deliveries = new List<DeliveryViewItem>();

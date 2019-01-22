@@ -1,0 +1,45 @@
+﻿@model ClockRestoration.ViewModels.ResponseGalleryEditorView
+
+<div class="container">
+    <div class="row mt-3">
+        <div class="col-md-5 order-page-name d-flex admin-panel-name">
+            <h2 class="my-auto page-name text-right">Настройки галереи</h2>
+        </div>
+
+        <div class="col-md-7 my-auto">
+
+            @using (Html.BeginForm("", "Admin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+                <h4>Редактировать раздел</h4>
+                <div class="form-group input-group">
+                    <span class="input-group-prepend  order-name-field">
+                        <label class="input-group-text w-100">Выберите раздел:</label>
+                    </span>
+                    @Html.DropDownList("GalleryToEditId", new SelectList(Model.Galleries, "Id", "Title"), new { @class = "form-control" })
+                </div>
+
+                <input type="submit" value="Удалить" formaction=@Url.Action("DeleteGallery") formmethod="post" class="btn btn-primary" />
+                <input type="submit" value="Подробнее" formaction=@Url.Action("GalleryDetails") formmethod="post" class="btn btn-primary" />
+
+                <hr />
+                <h4>Создать новый раздел</h4>
+                <div class="form-group input-group">
+                    <span class="input-group-prepend  order-name-field">
+                        <label for="GalleryName" class="input-group-text w-100">Название раздела:</label>
+                    </span>
+                    <input type="text" name="GalleryName" />
+                </div>
+
+                <div class="form-group input-group">
+                    <span class="input-group-prepend  order-name-field">
+                        <label for="MainImage" class="input-group-text w-100">Картинка раздела:</label>
+                    </span>
+                    @Html.TextBox("MainImage", "", new { type = "file", accept = "image/*" })
+                </div>
+
+
+                <input type="submit" value="Добавить" formaction=@Url.Action("AddGallery") formmethod="post" class="btn btn-primary" />
+            }
+        </div>
+    </div>
+</div>

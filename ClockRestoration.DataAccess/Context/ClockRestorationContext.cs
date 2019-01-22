@@ -1,4 +1,5 @@
 ﻿using ClockRestoration.Data.Context;
+using ClockRestoration.DataAccess.Entities;
 using ClockRestoration.Entities;
 using Microsoft.AspNet.Identity.EntityFramework;
 using System.Data.Entity;
@@ -13,16 +14,20 @@ namespace ClockRestoration.DataAccess.Context
         public DbSet<ClockType> ClockTypes { get; set; }
         public DbSet<Delivery> Deliveries { get; set; }
         public DbSet<Payment> Payments { get; set; }
+        public DbSet<Gallery> Galleries { get; set; }
+        public DbSet<GalleryPhoto> GalleryPhotos { get; set; }
+        public DbSet<OrderClockPhoto> OrderClockPhotos { get; set; }
 
         public ClockRestorationContext() : base("DefaultConnection")
         {
             Configuration.LazyLoadingEnabled = true;
         }
 
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
 
-            Database.SetInitializer(new DropCreateDatabaseIfModelChanges<ClockRestorationContext>());
+            Database.SetInitializer<ClockRestorationContext>(new ClockContextInitializer());
 
             base.OnModelCreating(modelBuilder);
 

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ClockRestoration.DataAccess.Entities;
+using System;
+using System.Collections.Generic;
 
 namespace ClockRestoration.Entities
 {
@@ -19,12 +21,14 @@ namespace ClockRestoration.Entities
         public virtual ClockType ClockType { get; set; }
         public long ClockTypeId { get; set; }
 
+        public virtual List<OrderClockPhoto> ClockPhotos { get; set; }
+
         public OrderStatus Status { get; set; }
-        public string ImageUrl { get; set; }
         public string Address { get; set; }
         public DateTime DeadLine { get; set; }
         public string PhoneNumber { get; set; }
         public string Comments { get; set; }
+        public decimal Cost { get; set; }
 
     }
 }

@@ -78,14 +78,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddPhotoToGalleryView.cs" />
+    <Compile Include="BrandEditorView.cs" />
     <Compile Include="BrandViewItem.cs" />
+    <Compile Include="RequestCabinetView.cs" />
+    <Compile Include="ResponseCabinetView.cs" />
     <Compile Include="ClockTypeViewItem.cs" />
+    <Compile Include="DeliveryEditorView.cs" />
     <Compile Include="DeliveryViewItem.cs" />
+    <Compile Include="EditBrandView.cs" />
+    <Compile Include="EditGalleryView.cs" />
+    <Compile Include="GalleryPhotoViewItem.cs" />
+    <Compile Include="GalleryViewItem.cs" />
     <Compile Include="GetOrdersView.cs" />
     <Compile Include="OrderViewItem.cs" />
+    <Compile Include="PaymentEditorView.cs" />
     <Compile Include="PaymentViewItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RequestGalleryEditorView.cs" />
     <Compile Include="RequestOrderView.cs" />
+    <Compile Include="ResponseGalleryDetailsView.cs" />
+    <Compile Include="ResponseGalleryEditorView.cs" />
     <Compile Include="ResponseOrderView.cs" />
   </ItemGroup>
   <ItemGroup>

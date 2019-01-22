@@ -1,0 +1,36 @@
+﻿@model ClockRestoration.ViewModels.DeliveryEditorView
+
+<div class="container">
+    <div class="row mt-3">
+        <div class="col-md-4 order-page-name d-flex admin-panel-name text-center">
+            <h2 class="my-auto page-name">Настройка способов доставки</h2>
+        </div>
+        <div class="col-md-8 my-auto">
+            @using (Html.BeginForm("", "Admin", FormMethod.Post))
+            {
+                <div class="form-group input-group">
+                    <span class="input-group-prepend  order-name-field">
+                        <label class="input-group-text w-100">Выберите способ доставки:</label>
+                    </span>
+                    @Html.DropDownList("DeliveryId", new SelectList(Model.Deliveries, "Id", "Title"), new { @class = "form-control" })
+                    <input type="submit" value="Удалить" formaction=@Url.Action("DeleteDelivery") formmethod="post" class="btn btn-primary ml-2" />
+                </div>
+
+
+
+                <div class="form-group input-group">
+                    <span class="input-group-prepend  order-name-field">
+                        <label for="DeliveryTitle" class="input-group-text w-100">Наименование способа доставки:</label>
+                    </span>
+                    <input type="text" name="DeliveryTitle" />
+                    <input type="submit" value="Изменить название" formaction=@Url.Action("EditDelivery") formmethod="post" class="btn btn-primary ml-auto" />
+                    <input type="submit" value="Добавить" formaction=@Url.Action("AddDelivery") formmethod="post" class="btn btn-primary ml-auto" />
+                </div>
+
+            }
+        </div>
+    </div>
+
+</div>
+
+

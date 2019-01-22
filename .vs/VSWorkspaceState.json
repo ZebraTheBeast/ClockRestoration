@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\ClockRestoration.BusinessLogic",
+    "\\ClockRestoration.BusinessLogic\\bin",
+    "\\ClockRestoration.BusinessLogic\\Services"
   ],
+  "SelectedNode": "\\ClockRestoration.BusinessLogic\\Services\\OrderService.cs",
   "PreviewInSolutionExplorer": false
 }

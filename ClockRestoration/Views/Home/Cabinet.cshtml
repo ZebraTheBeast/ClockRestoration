@@ -1,0 +1,51 @@
+﻿@model ClockRestoration.ViewModels.ResponseCabinetView
+
+<div class="container">
+    <div class="row mt-3">
+        <div class="col-md-4 order-page-name d-flex admin-panel-name">
+            <h2 class="my-auto page-name text-center">Личный кабинет</h2>
+        </div>
+        <div class="col-md-8 my-auto">
+            @using (Html.BeginForm("EditUserInfo", "Home", FormMethod.Post))
+            {
+                <div class="form-group input-group">
+                    <span class="input-group-prepend order-name-field">
+                        @Html.Label("FirstName", "Имя", new { @class = "input-group-text w-100" })
+                    </span>
+                    @Html.TextBox("FirstName", Model.FirstName, new { @class = "form-control" })
+                </div>
+
+                <div class="form-group input-group">
+                    <span class="input-group-prepend order-name-field">
+                        @Html.Label("LastName", "Фамилия", new { @class = "input-group-text w-100" })
+                    </span>
+                    @Html.TextBox("LastName", Model.LastName, new { @class = "form-control" })
+                </div>
+
+                <div class="form-group input-group">
+                    <span class="input-group-prepend order-name-field">
+                        @Html.Label("PhoneNumber", "Номер телефона", new { @class = "input-group-text w-100" })
+                    </span>
+                    @Html.TextBox("PhoneNumber", Model.PhoneNumber, new { @class = "form-control" })
+                </div>
+
+                <div class="form-group input-group">
+                    <span class="input-group-prepend order-name-field">
+                        @Html.Label("Email", "Email", new { @class = "input-group-text w-100" })
+                    </span>
+                    @Html.TextBox("Email", Model.Email, new { @class = "form-control" })
+                </div>
+
+                <div class="form-group input-group">
+                    <span class="input-group-prepend order-name-field">
+                        @Html.Label("Password", "Пароль", new { @class = "input-group-text w-100" })
+                    </span>
+                    @Html.TextBox("Password", "", new { @class = "form-control", type = "password" })
+                </div>
+                <input type="submit" value="Сохранить" class="btn btn-info" />
+            }
+            <hr />
+            @Html.ActionLink("Просмотр заказов", "GetOrdersByUser")
+        </div>
+    </div>
+</div>

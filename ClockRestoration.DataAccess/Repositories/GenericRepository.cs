@@ -1,12 +1,8 @@
 ﻿using ClockRestoration.DataAccess.Context;
 using ClockRestoration.DataAccess.Interfaces;
-using System;
 using System.Collections.Generic;
 using System.Data.Entity;
-using System.Data.SqlClient;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ClockRestoration.DataAccess.Repositories
 {
@@ -20,15 +16,27 @@ namespace ClockRestoration.DataAccess.Repositories
             _context = new ClockRestorationContext();
             _dbSet = _context.Set<TEntity>();
         }
-        public void Add(TEntity entity)
+        public TEntity Add(TEntity entity)
         {
             _dbSet.Add(entity);
             _context.SaveChanges();
+            return entity;
         }
 
         public void Delete(TEntity entity)
         {
             _dbSet.Remove(entity);
+            _context.SaveChanges();
+        }
+
+        public void DeleteRange(List<TEntity> entities)
+        {
+            //_dbSet.RemoveRange(entities);
+            foreach(var entity in entities)
+            {
+                _dbSet.Attach(entity);
+                _context.Entry(entity).State = EntityState.Deleted;
+            }
             _context.SaveChanges();
         }
 

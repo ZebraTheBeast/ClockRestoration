@@ -29,6 +29,9 @@ namespace ClockRestoration.App_Start
             Bind<IOrderRepository>().To<OrderRepository>();
             Bind<IPaymentRepository>().To<PaymentRepository>();
             Bind<IUserRepository>().To<UserRepository>();
+            Bind<IOrderClockPhotoRepository>().To<OrderClockPhotoRepository>();
+            Bind<IGalleryRepository>().To<GalleryRepository>();
+            Bind<IGalleryPhotoRepository>().To<GalleryPhotoRepository>();
 
             Bind<IAuthenticationManager>().ToMethod((context) => System.Web.HttpContext.Current.GetOwinContext().Authentication);
             Bind<IApplicationUserManager>().To<ApplicationUserManager>();

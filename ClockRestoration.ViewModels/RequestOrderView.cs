@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Web;
 
 namespace ClockRestoration.ViewModels
@@ -10,7 +11,7 @@ namespace ClockRestoration.ViewModels
         public long PaymentId { get; set; }
         public long BrandId { get; set; }
         public long ClockTypeId { get; set; }
-        public HttpPostedFileBase Image { get; set; }
+        public List<HttpPostedFileBase> Images { get; set; }
         public string Address { get; set; }
         public DateTime DeadLine { get; set; }
         public string PhoneNumber { get; set; }

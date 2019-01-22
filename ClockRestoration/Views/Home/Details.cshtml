@@ -1,98 +1,175 @@
 ﻿@model ClockRestoration.ViewModels.OrderViewItem
 <div class="container">
-    <h2>Details</h2>
-
     <div>
-        <h4>Order №@Model.Id</h4>
-        <hr />
+        <div class="row mt-3">
+            <div class="col-md-5 order-page-name">
+                <h1 class="text-center page-name">Заказ №@Model.Id</h1>
+                <hr />
+                @if (User.IsInRole("admin"))
+                {
+                    <ul class="nav nav-pills flex-column">
+                        <li class="nav-item mt-1">
+                            @Html.ActionLink("Изменить заказ", "Edit", new { id = Model.Id }, new { @class = "btn btn-light nav-link" })
+                        </li>
+                        @if (Model.Status == "Pending")
+                        {
+                            <li class="nav-item mt-1">
+                                @Html.ActionLink("Подтвердить", "ConfirmOrder", new { id = Model.Id }, new { @class = "btn btn-success nav-link  order-detail" })
+                            </li>
+                            <li class="nav-item mt-1">
+                                @Html.ActionLink("Отменить", "CancelOrder", new { id = Model.Id }, new { @class = "btn btn-danger  nav-link  order-detail" })
+                            </li>
+                        }
 
-        <div class="input-group">
-            <span class="input-group-text">
-                Статус
-            </span>
-            <input type="text" class="form-control" value="@Html.DisplayFor(model => model.Status)"> 
+                        @if (Model.Status == "InProgress")
+                        {
+                            <li class="nav-item mt-1">
+                                @Html.ActionLink("Выполнен", "DoneOrder", new { id = Model.Id }, new { @class = "btn btn-primary  nav-link  order-detail" })
+                            </li>
+                        }
+
+                        <li class="nav-item mt-1">
+                            @Html.ActionLink("Ко всем заказам", "GetOrders", new { }, new { @class = "btn btn-default  nav-link" })
+                        </li>
+                    </ul>
+                }
+            </div>
+            <div class="col-md-7">
+                @if (Model.Status == "Pending")
+                {
+                    Model.Status = "Ожидание";
+                }
+
+                @if (Model.Status == "InProgress")
+                {
+                    Model.Status = "В процессе";
+                }
+
+                @if (Model.Status == "Canceled")
+                {
+                    Model.Status = "Отменён";
+                }
+
+                @if (Model.Status == "Completed")
+                {
+                    Model.Status = "Выполнен";
+                }
+                <div class=" input-group">
+                    <span class="input-group-prepend order-name-field">
+                        <label class="input-group-text w-100">
+                            Статус
+                        </label>
+                    </span>
+                    <input type="text" readonly class="form-control" value="@Html.DisplayFor(model => model.Status)">
+                </div>
+
+                <div class="form-group input-group">
+                    <span class="input-group-prepend order-name-field">
+                        <label class="input-group-text w-100">
+                            Крайний срок
+                        </label>
+                    </span>
+                    <input type="text" readonly class="form-control" value="@Html.DisplayFor(model => model.DeadLine)">
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-prepend order-name-field">
+                        <label class="input-group-text w-100">
+                            ФИО
+                        </label>
+                    </span>
+                    <input type="text" readonly class="form-control" value="@Html.DisplayFor(model => model.Name)">
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-prepend order-name-field">
+                        <label class="input-group-text w-100">
+                            Адрес
+                        </label>
+                    </span>
+                    <input type="text" readonly class="form-control" value="@Html.DisplayFor(model => model.Address)">
+                </div>
+
+                <div class="form-group input-group">
+                    <span class="input-group-prepend order-name-field">
+                        <label class="input-group-text w-100">
+                            Номер телефона
+                        </label>
+                    </span>
+                    <input type="text" readonly class="form-control" value="@Html.DisplayFor(model => model.Phone)">
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-prepend order-name-field">
+                        <label class="input-group-text w-100">
+                            Бренд
+                        </label>
+                    </span>
+                    <input type="text" readonly class="form-control" value="@Html.DisplayFor(model => model.Brand)">
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-prepend order-name-field">
+                        <label class="input-group-text w-100">
+                            Тип часов
+                        </label>
+                    </span>
+                    <input type="text" readonly class="form-control" value="@Html.DisplayFor(model => model.ClockType)">
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-prepend order-name-field">
+                        <label class="input-group-text w-100">
+                            Фото
+                        </label>
+                    </span>
+                    @{
+                        foreach (var ImageUrl in Model.ImagesUrl)
+                        {
+                            <img src="~/@ImageUrl" style="max-width: 50%; max-height: 300px" />
+                        }
+                    }
+
+                </div>
+
+                <div class="form-group input-group">
+                    <span class="input-group-prepend order-name-field">
+                        <label class="input-group-text w-100">
+                            Комментарии
+                        </label>
+                    </span>
+                    <input type="text" readonly class="form-control" value="@Html.DisplayFor(model => model.Comments)">
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-prepend order-name-field">
+                        <label class="input-group-text w-100">
+                            Способ доставки
+                        </label>
+                    </span>
+                    <input type="text" readonly class="form-control" value="@Html.DisplayFor(model => model.Delivery)">
+                </div>
+
+                <div class="form-group input-group">
+                    <span class="input-group-prepend order-name-field">
+                        <label class="input-group-text w-100">
+                            Способ оплаты
+                        </label>
+                    </span>
+                    <input type="text" readonly class="form-control" value="@Html.DisplayFor(model => model.Payment)">
+                </div>
+
+                <div class="form-group input-group">
+                    <span class="input-group-prepend order-name-field">
+                        <label class="input-group-text w-100">
+                            Стоимость работы
+                        </label>
+                    </span>
+                    <input type="text" readonly class="form-control" value="@Html.DisplayFor(model => model.Cost)">
+                </div>
+
+            </div>
         </div>
-
-       
-            <div class="input-group">
-                <span class="input-group-text">
-                    ФИО
-                </span>
-                <input type="text" class="form-control" value="@Html.DisplayFor(model => model.Name)">
-            </div>
-
-            <div class="input-group">
-                <span class="input-group-text">
-                    Адрес
-                </span>
-                <input type="text" class="form-control" value="@Html.DisplayFor(model => model.Address)">
-            </div>
-
-            <div class="input-group">
-                <span class="input-group-text">
-                    Номер телефона
-                </span>
-                <input type="text" class="form-control" value="@Html.DisplayFor(model => model.Phone)">
-            </div>
-
-            <div class="input-group">
-                <span class="input-group-text">
-                    Дата окончания работ
-                </span>
-                <input type="text" class="form-control" value="@Html.DisplayFor(model => model.DeadLine)">
-            </div>
-
-            <div class="input-group">
-                <span class="input-group-text">
-                    Бренд
-                </span>
-                <input type="text" class="form-control" value="@Html.DisplayFor(model => model.Brand)">
-            </div>
-
-            <div class="input-group">
-                <span class="input-group-text">
-                    Тип часов
-                </span>
-                <input type="text" class="form-control" value="@Html.DisplayFor(model => model.ClockType)">
-            </div>
-
-            <div class="input-group">
-                <span class="input-group-text">
-                    Фото
-                </span>
-                <img src="~/@Model.ImageUrl" style="max-width: 50%; max-height: 300px"/>
-                
-            </div>
-                
-            
-
-            <div class="input-group">
-                <span class="input-group-text">
-                    Комментарии
-                </span>
-                <input type="text" class="form-control" value="@Html.DisplayFor(model => model.Comments)">
-            </div>
-
-            <div class="input-group">
-                <span class="input-group-text">
-                    Способ доставки
-                </span>
-                <input type="text" class="form-control" value="@Html.DisplayFor(model => model.Delivery)">
-            </div>
-
-            <div class="input-group">
-                <span class="input-group-text">
-                    Способ оплаты
-                </span>
-                <input type="text" class="form-control" value="@Html.DisplayFor(model => model.Payment)">
-            </div>
-
     </div>
-    <p>
-        @Html.ActionLink("Изменить заказ", "Edit", new { id = Model.Id }, new { @class = "btn btn-default" })
-        @Html.ActionLink("Подтвердить", "ConfirmOrder", new { id = Model.Id }, new { @class = "btn btn-success" })
-        @Html.ActionLink("Выполнен", "DoneOrder", new { id = Model.Id }, new { @class = "btn btn-primary" })
-        @Html.ActionLink("Отменить", "CancelOrder", new { id = Model.Id }, new { @class = "btn btn-danger" })
-        @Html.ActionLink("Ко всем заказов", "GetOrders", new { }, new { @class = "btn btn-default" })
-    </p>
+
 </div>

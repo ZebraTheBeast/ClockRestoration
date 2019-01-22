@@ -17,7 +17,7 @@ namespace ClockRestoration.Controllers
 
         public HomeController(IOrderService orderService)
         {
-            this._orderService = orderService;
+            _orderService = orderService;
         }
 
         public ActionResult Index()
@@ -27,24 +27,36 @@ namespace ClockRestoration.Controllers
 
         public ActionResult Order()
         {
-            var responseOrderView = _orderService.GetInfoForOrder();
+            if(!User.Identity.IsAuthenticated)
+            {
+                return RedirectToAction("Login","Account" , new { });
+            }
+            var responseOrderView = _orderService.GetInfoForOrder(User.Identity.Name);
             return View(responseOrderView);
         }
 
         [HttpPost]
         public ActionResult MakeOrder(ResponseOrderView responseOrderView)
         {
-
+            List<string> filesUrl = new List<string>();
             var requestOrderView = new RequestOrderView();
+
+            var userId = _orderService.GetUserId(User.Identity.Name);
+
             requestOrderView = responseOrderView.Order;
 
-            var fileId = Guid.NewGuid().ToString().Replace("-", "");
-            var fileName = Path.GetFileName(requestOrderView.Image.FileName);
-            var path = Path.Combine(Server.MapPath("~/Uploads/Photo/"), requestOrderView.UserId.ToString(), fileId, fileName);
-            Directory.CreateDirectory(Path.Combine(Server.MapPath("~/Uploads/Photo/"), requestOrderView.UserId.ToString(), fileId));
-            requestOrderView.Image.SaveAs(path);
-            string fileUrl = $"Uploads/Photo/{requestOrderView.UserId.ToString()}/{fileId}/{fileName}";
-            _orderService.MakeOrder(requestOrderView, fileUrl, User.Identity.Name);
+            var folderId = Guid.NewGuid().ToString().Replace("-", "");
+            foreach (var image in requestOrderView.Images)
+            {
+                var fileName = Path.GetFileName(image.FileName);
+                var path = Path.Combine(Server.MapPath("~/Uploads/Photo/"), userId, folderId, fileName);
+                Directory.CreateDirectory(Path.Combine(Server.MapPath("~/Uploads/Photo/"), userId, folderId));
+                image.SaveAs(path);
+                string fileUrl = $"Uploads/Photo/{userId}/{folderId}/{fileName}";
+                filesUrl.Add(fileUrl);
+            }
+            
+            _orderService.MakeOrder(requestOrderView, filesUrl, User.Identity.Name);
 
             return RedirectToAction("Index");
         }
@@ -52,12 +64,43 @@ namespace ClockRestoration.Controllers
         public ActionResult GetOrders()
         {
             var viewModel = _orderService.GetOrders();
+            viewModel.StatusId = 0;
             return View(viewModel);
         }
 
+        public ActionResult GetPendingOrders()
+        {
+            var viewModel = _orderService.GetOrdersByStatus(OrderStatus.Pending);
+            viewModel.StatusId = 1;
+            return View("GetOrders", viewModel);
+        }
+
+        public ActionResult GetInProgressOrders()
+        {
+            var viewModel = _orderService.GetOrdersByStatus(OrderStatus.InProgress);
+            viewModel.StatusId = 2;
+            return View("GetOrders", viewModel);
+        }
+
+        public ActionResult GetCompletedOrders()
+        {
+            var viewModel = _orderService.GetOrdersByStatus(OrderStatus.Completed);
+            viewModel.StatusId = 3;
+            return View("GetOrders", viewModel);
+        }
+
+        public ActionResult GetCanceledOrders()
+        {
+            var viewModel = _orderService.GetOrdersByStatus(OrderStatus.Canceled);
+            viewModel.StatusId = 4;
+            return View("GetOrders", viewModel);
+        }
+
+
         public ActionResult Gallery()
         {
-            return View();
+            var model = _orderService.GetResponseGalleryEditorView();
+            return View(model);
         }
 
         public ActionResult Contacts()
@@ -65,9 +108,30 @@ namespace ClockRestoration.Controllers
             return View();
         }
 
-        public ActionResult GalleryDetails()
+        public ActionResult Cabinet()
         {
-            return View();
+            var model = _orderService.GetUserInfo(User.Identity.Name);
+
+            return View(model);
+        }
+
+        public ActionResult GetOrdersByUser()
+        {
+            var model = _orderService.GetOrdersByUser(User.Identity.Name);
+            return View("GetOrders", model);
+        }
+
+        [HttpPost]
+        public ActionResult EditUserInfo(RequestCabinetView requestCabinetView)
+        {
+            _orderService.UpdateUserInfo(requestCabinetView, User.Identity.Name);
+            return RedirectToAction("Cabinet");
+        }
+
+        public ActionResult GalleryDetails(long galleryId)
+        {
+            var model = _orderService.GetGallery(galleryId);
+            return View(model);
         }
         public ActionResult Edit(int id)
         {

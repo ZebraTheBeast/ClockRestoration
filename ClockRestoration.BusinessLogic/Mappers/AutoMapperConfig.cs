@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using ClockRestoration.DataAccess.Entities;
 using ClockRestoration.Entities;
 using ClockRestoration.ViewModels;
 using System;
@@ -20,6 +21,8 @@ namespace ClockRestoration.BusinessLogic.Mappers
                 cfg.CreateMap<Payment, PaymentViewItem>();
                 cfg.CreateMap<ClockType, ClockTypeViewItem>();
                 cfg.CreateMap<RequestOrderView, Order>();
+                cfg.CreateMap<Gallery, GalleryViewItem>();
+                cfg.CreateMap<GalleryPhoto, GalleryPhotoViewItem>();
             });
         }
     }
