@@ -1,0 +1,56 @@
+﻿@model ClockRestoration.ViewModels.ResponseGalleryDetailsView
+<div class="container">
+    <div class="row mt-3">
+        <div class="col-md-6 order-page-name">
+            @using (Html.BeginForm("EditGallery", "Admin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+                @Html.Hidden("GalleryId", Model.Gallery.Id)
+
+                <div class="form-group input-group">
+                    <span class="input-group-prepend  order-name-field">
+                        @Html.Label("GalleryTitle", "Название раздела", new { @class = "input-group-text w-100" })
+                    </span>
+                    @Html.TextBox("GalleryTitle", Model.Gallery.Title, new { type = "text", @class = "form-control noresize" })
+                </div>
+
+                <div class="input-group form-group">
+                    <span class="input-group-prepend  order-name-field">
+                        @Html.LabelFor(m => m.Gallery.MainImageUrl, "Картинка раздела", new { @class = "input-group-text w-100" })
+                    </span>
+
+                    <img src="~/@Model.Gallery.MainImageUrl" style="max-width: 50%; max-height: 300px" />
+                </div>
+
+                <div class="input-group form-group">
+                    <span class="input-group-prepend  order-name-field">
+                        @Html.Label("MainImage", "Сменить картинку", new { @class = "input-group-text w-100" })
+                    </span>
+                    @Html.TextBox("MainImage", "", new { type = "file", accept = "image/*", @class = "form-control noresize" })
+                </div>
+                <div class=" form-group">
+                    <input type="submit" value="Сохранить изменения" class="btn btn-primary btn-block" />
+                </div>
+                <div class="input-group form-group">
+                    <span class="input-group-prepend  order-name-field">
+                        @Html.Label("Images", "Картинки в разделе", new { @class = "input-group-text w-100" })
+                    </span>
+                    @Html.TextBox("Images", "", new { type = "file", multiple = "multiple", accept = "image/*", @class = "form-control noresize" })
+                </div>
+                <input type="submit" value="Добавить" formaction="AddPhotoToGallery" class="btn btn-primary btn-block" />
+            }
+        </div>
+        <div class="col-md-6">
+            @foreach (var photo in Model.Photos)
+            {
+                <div class="figure">
+
+                    <img class="gallery-photo figure-img" src="~/@photo.ImageUrl" />
+                    <figcaption class="figure-caption text-center">
+                        @Html.ActionLink("Удалить", "DeletePhotoFromGallery", new { photoId = photo.Id, galleryId = Model.Gallery.Id }, new { @class = "btn btn-danger" })
+                    </figcaption>
+
+                </div>
+            }
+        </div>
+    </div>
+</div>

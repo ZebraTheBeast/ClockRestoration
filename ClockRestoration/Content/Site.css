@@ -148,3 +148,33 @@ body {
     margin-bottom: 10px;
     padding-bottom: 5px;
 }
+
+.nav-pills .nav-link.active {
+    background-color: #10828C;
+}
+
+.nav-pills .nav-link {
+    color: #10828C;
+}
+
+.nav-pills .nav-link.order-detail {
+    color: #fff;
+}
+
+.table {
+    background-color: #e9ecef;
+}
+
+.form-control[readonly] {
+    background-color: #fff;
+}
+
+.admin-panel-name {
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+
+.gallery-photo{
+    max-width: 300px;
+    margin-bottom: 1%;
+}

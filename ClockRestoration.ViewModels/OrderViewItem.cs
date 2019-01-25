@@ -18,10 +18,11 @@ namespace ClockRestoration.ViewModels
 
         public string Brand { get; set; }
         public string ClockType { get; set; }
-        public string ImageUrl { get; set; }
+        public List<string> ImagesUrl { get; set; }
         public string Comments { get; set; }
 
         public string Delivery { get; set; }
         public string Payment { get; set; }
+        public decimal Cost { get; set; }
     }
 }

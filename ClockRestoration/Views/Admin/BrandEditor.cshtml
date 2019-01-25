@@ -1,0 +1,36 @@
+﻿@model ClockRestoration.ViewModels.BrandEditorView
+
+<div class="container">
+    <div class="row mt-3">
+        <div class="col-md-4 order-page-name d-flex admin-panel-name text-center">
+            <h2 class="my-auto page-name">Настройка брендов</h2>
+        </div>
+        <div class="col-md-8 my-auto">
+            @using (Html.BeginForm("", "Admin", FormMethod.Post))
+            {
+            <div class="form-group input-group">
+                <span class="input-group-prepend  order-name-field">
+                    <label class="input-group-text w-100">Выберите бренд:</label>
+                </span>
+                @Html.DropDownList("BrandId", new SelectList(Model.Brands, "Id", "Title"), new { @class = "form-control" })
+                <input type="submit" value="Удалить" formaction=@Url.Action("DeleteBrand") formmethod="post" class="btn btn-primary ml-2" />
+            </div>
+
+                
+
+            <div class="form-group input-group">
+                <span class="input-group-prepend  order-name-field">
+                    <label for="BrandTitle" class="input-group-text w-100">Наименование бренда:</label>
+                </span>
+                <input type="text" name="BrandTitle" />
+                <input type="submit" value="Изменить название" formaction=@Url.Action("EditBrand") formmethod="post" class="btn btn-primary ml-auto" />
+                <input type="submit" value="Добавить" formaction=@Url.Action("AddBrand") formmethod="post" class="btn btn-primary ml-auto" />
+            </div>
+                
+            }
+        </div>
+    </div>
+
+</div>
+
+
