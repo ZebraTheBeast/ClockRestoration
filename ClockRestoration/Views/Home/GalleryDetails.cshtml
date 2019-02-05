@@ -1,14 +1,17 @@
 ﻿@model ClockRestoration.ViewModels.ResponseGalleryDetailsView
-<div class="container">
-    <h2 class="text-center">@Model.Gallery.Title</h2>
-    <div class="row">
-        <div class="col-md-12">
-            @foreach(var photo in Model.Photos)
-            {
-                <img class="img-thumbnail gallery-photo" src="~/@photo.ImageUrl" />
-            }
+<div class="album">
+    <div class="container">
+        <h2 class="text-center">@Model.Gallery.Title</h2>
+        <div class="row">
+
+            @foreach (var photo in Model.Photos)
+            {<div class="card">
+                    <img alt="356x280" style="height: 280px; width: 356px; display: block;" src="~/@photo.ImageUrl" data-holder-rendered="true" />
+                </div>      }
+
 
         </div>
     </div>
 </div>
+
 

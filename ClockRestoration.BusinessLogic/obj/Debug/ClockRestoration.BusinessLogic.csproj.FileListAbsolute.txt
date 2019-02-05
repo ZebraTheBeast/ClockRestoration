@@ -172,3 +172,5 @@ C:\Users\Zebra\Documents\GitHub\ClockRestoration\ClockRestoration.BusinessLogic\
 C:\Users\Zebra\Documents\GitHub\ClockRestoration\ClockRestoration.BusinessLogic\bin\Debug\Ninject.xml
 C:\Users\Zebra\Documents\GitHub\ClockRestoration\ClockRestoration.BusinessLogic\bin\Debug\System.ValueTuple.xml
 C:\Users\Zebra\Documents\GitHub\ClockRestoration\ClockRestoration.BusinessLogic\obj\Debug\ClockRestoration.BusinessLogic.csproj.CopyComplete
+C:\Users\user\source\repos\ClockRestoration\ClockRestoration.BusinessLogic\bin\Debug\Ninject.dll
+C:\Users\user\source\repos\ClockRestoration\ClockRestoration.BusinessLogic\bin\Debug\Ninject.xml
